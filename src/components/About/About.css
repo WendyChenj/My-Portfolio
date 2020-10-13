@@ -1,0 +1,40 @@
+
+
+
+.pic-card-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.pic-item {
+    padding-top: 64px;
+    width: 450px;
+    height: 800px;
+}
+
+.about-me-main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.about-me-title {
+    padding: 32px;
+    padding-top: 64px;
+    align-self: flex-start;
+}
+
+.about-me-intro {
+    padding: 32px;
+}
+
+.about-me-info {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}

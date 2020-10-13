@@ -1,0 +1,21 @@
+.education-container {
+    height: 100vh;
+    width: 100%;
+    padding: 0 60px;
+}
+
+.education-info-container {
+    width: 100%;
+}
+
+.edu-item {
+    padding: 32px 64px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.edu-item-icon {
+    padding: 0 32px 0 16px;
+}
+
+
