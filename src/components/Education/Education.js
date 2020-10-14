@@ -6,9 +6,10 @@ import './Education.css';
 
 const Education = () => {
     return (
+        <section id='education'>
         <ContentGrid>
             <div className='education-container'>
-                <Typography variant='h3' color='primary' style={{fontWeight: '900', padding: '112px 0 16px 0'}}>Education</Typography>
+                <Typography variant='h4' color='primary' style={{fontWeight: '900', padding: '112px 0 16px 0'}}>Education</Typography>
                 <div className='education-info-container'>
                     <div className='edu-item'>
                         <div className='edu-item-icon'>
@@ -60,6 +61,7 @@ const Education = () => {
                 </div>
             </div>
         </ContentGrid>
+        </section>
     );
 }
 

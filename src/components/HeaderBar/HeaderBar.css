@@ -16,6 +16,11 @@
     list-style: none;
 }
 
+.header-container-items a {
+    text-decoration: none;
+    color: black;
+}
+
 .header-container-item {
     padding: 0 32px;
     font-size: 16px;

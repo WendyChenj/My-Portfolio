@@ -1,23 +1,57 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid'; 
-import { Divider, Typography, Chip } from '@material-ui/core';
+import { Divider, Typography, Chip, GridList, GridListTile } from '@material-ui/core';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import './Projects.css';
 
-const Education = () => {
+// use require.context() in webpack: https://webpack.js.org/guides/dependency-management/#require-context
+function importAll(r) {
+    let images = {};
+    r.keys().map( item => { 
+        console.log(item);
+        images[item.replace('./', '')] = r(item); 
+    });
+    return images;
+}
+
+const images = importAll(require.context( '../../assets/images/burgerProject', false, /\.(png|jpe?g|svg)$/));
+
+const BurgerProjectImgs = () => {
+
     return (
+        <GridList cellHeight={400} style={{ flexWrap: 'nowrap', transform:'translateZ(0)'}}>
+            {Object.keys(images).map( img => {
+                return (
+                    <GridListTile cols={1} rows={1} key={img} style={{width: '350px', height: '400px'}}>
+                        <img src={images[img]} style={{width: '320px', height: '400px'}}/>
+                    </GridListTile>
+                )}
+            )}
+        </GridList>
+    );
+}
+
+const Education = () => {
+    const settings = {
+        dots: true,
+        speed: 500,
+        adaptiveHeight: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+    };
+
+    return (
+        <section id='projects'>
         <ContentGrid>
             <div className='projects-container'>
-                <div>
-                    <Typography variant='h3' color='primary' style={{fontWeight: '900', padding: '112px 0 16px 0'}}>Projects</Typography>
-                </div>
+                <Typography variant='h4' color='primary' style={{fontWeight: '900', padding: '112px 0 16px 0'}}>Projects</Typography>
 
                 <div className='project-item'>
                     <div className='project-item-icon'>
                         <FastfoodIcon color='primary' fontSize='large'  />
                     </div>
-                    <div className='project-item-title'>
+                    <div style={{ width: '100%' }}>
                         <Typography color='primary' variant='h6' style={{fontWeight: '800', paddingBottom: '8px'}}>2020.06-2020.09</Typography>  
                         <Typography variant='h5' style={{fontWeight: '800', paddingBottom: '8px'}}>My Burger Order Application</Typography>                           
                         <Typography color='secondary' style={{paddingBottom: '8px'}}>
@@ -26,13 +60,15 @@ const Education = () => {
                         </Typography>
                         <div className='project-item-tech-stack'>
                             <Typography style={{fontWeight: '800', paddingRight: '16px'}}>Tech Stack: </Typography>
-                            <Chip label='React' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='Redux' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='Material-UI' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='react-router' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='axios' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='Firebase' color='primary' className='project-item-tech-stack-item' />
+                            {[ 'React', 'Redux', 'Material-UI', 'react-router', 'axios', 'Firebase' ].map( tech => {
+                                return <Chip label={tech} color='primary' key={tech} className='project-item-tech-stack-item' />
+                            })}
                         </div>
+
+                        <div className='project-images-container' style={{width: '100%'}}>
+                            <BurgerProjectImgs  />
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -53,21 +89,16 @@ const Education = () => {
                         </Typography>
                         <div className='project-item-tech-stack'>
                             <Typography style={{fontWeight: '800', paddingRight: '16px'}}>Tech Stack: </Typography>
-                            <Chip label='Python' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='Flask' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='Flask-sqlalchemy' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='MySQL' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='JavaScript' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='HTML' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='CSS' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='RESTful API' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='IoT' color='primary' className='project-item-tech-stack-item' />
-                            <Chip label='Expert System' color='primary' className='project-item-tech-stack-item' />
+                            {[ 'Python', 'Flask', 'Flask-SqlAlchemy', 'MySQL', 'JavaScript', 'HTML', 'CSS', 'Restful API', 'IoT', 'Expert System' ].map(
+                                tech => {
+                                    return <Chip label={ tech } color='primary' key={tech}  className='project-item-tech-stack-item' />
+                            })}
                         </div>
                     </div>
                 </div>
             </div>
         </ContentGrid>
+        </section>
     );
 }
 
