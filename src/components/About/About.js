@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid';
-import { Grid, Typography, Container, List, ListItemText } from '@material-ui/core';
+import { Grid, Typography, Container, List, ListItemText, Button } from '@material-ui/core';
 import self from '../../assets/images/self/self.JPG';
 import './About.css';
 
@@ -46,6 +46,11 @@ const About = () => {
                                 </List>
                             </Grid>
                         </Grid>
+                        <div>
+                            <Button>Download My CV</Button>
+                            <Button>Hire Me</Button>
+                        </div>
+                        
                     </div>     
                 </Grid>
             </Grid>

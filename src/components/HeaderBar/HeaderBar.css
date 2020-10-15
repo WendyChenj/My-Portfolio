@@ -17,9 +17,23 @@
 }
 
 .header-container-items a {
+    padding: 8px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
+
+.header-container-items a:hover {
+    color: #9c27b0;
+    font-weight: 600;
+}
+
+.header-container-items a.active {
+    color: #9c27b0;
+    font-weight: 600;
+    border-bottom: 3px solid #9c27b0;
+}
+
 
 .header-container-item {
     padding: 0 32px;
