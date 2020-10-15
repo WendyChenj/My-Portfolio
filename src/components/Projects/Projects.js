@@ -9,7 +9,6 @@ import './Projects.css';
 function importAll(r) {
     let images = {};
     r.keys().map( item => { 
-        console.log(item);
         images[item.replace('./', '')] = r(item); 
     });
     return images;
@@ -24,7 +23,7 @@ const BurgerProjectImgs = () => {
             {Object.keys(images).map( img => {
                 return (
                     <GridListTile cols={1} rows={1} key={img} style={{width: '350px', height: '400px'}}>
-                        <img src={images[img]} style={{width: '320px', height: '400px'}}/>
+                        <img src={images[img]} alt={img} style={{width: '320px', height: '400px'}}/>
                     </GridListTile>
                 )}
             )}
