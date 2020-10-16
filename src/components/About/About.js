@@ -1,12 +1,12 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid';
-import { Grid, Typography, Container, List, ListItemText, Button } from '@material-ui/core';
+import ContactButton from '../Layout/ContactButton';
+import { Grid, Typography, Container, List, ListItemText } from '@material-ui/core';
 import self from '../../assets/images/self/self.JPG';
 import './About.css';
 
 const About = () => {
     return (
-        <section id='about'>
         <ContentGrid>
             <Grid container spacing={0}>
                 <Grid item md={6}>
@@ -46,16 +46,15 @@ const About = () => {
                                 </List>
                             </Grid>
                         </Grid>
-                        <div>
-                            <Button>Download My CV</Button>
-                            <Button>Hire Me</Button>
+                        <div className='about-me-button-container'>
+                            <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true }>Download My CV</ContactButton>
+                            <ContactButton href='mailto:wendychen9395@gmail.com' download={false}>Hire Me</ContactButton>
                         </div>
                         
                     </div>     
                 </Grid>
             </Grid>
         </ContentGrid>
-        </section>
     );
 }
 

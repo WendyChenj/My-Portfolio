@@ -9,7 +9,7 @@
 }
 
 .pic-item {
-    padding-top: 100px;
+    padding-top: 112px;
     width: 500px;
     height: 700px;
 }
@@ -24,18 +24,23 @@
 
 .about-me-title {
     padding: 32px;
-    padding-top: 100px;
+    padding-top: 112px;
     align-self: flex-start;
 }
 
 .about-me-intro {
-    padding: 8px 32px;
+    padding: 16px 32px;
 }
 
 .about-me-info {
     font-size: 32px;
     font-weight: 600;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
+}
+
+.about-me-button-container {
+    margin-left: -32px;
+    margin-top: 16px;
 }
 
 @media screen and (max-height: 800px) {
