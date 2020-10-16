@@ -25,15 +25,13 @@ const Skills = () => {
                     <Grid item md={5}>
                         <Skill title='JavaScript' progress={ 90 } />
                         <Skill title='HTML / CSS' progress={ 85 } />
-                        <Skill title='MySQL' progress={ 80 } />
-                        <Skill title='Python' progress={ 75 } />  
-                        <Skill title='Git / Github' progress={ 75 } />
+                        <Skill title='Python' progress={ 75 } />
+                        <Skill title='SQL' progress={ 80 } />                                               
                     </Grid>
                     <Grid item md={5}>
                         <Skill title='React' progress={ 85 } />
-                        <Skill title='Redux' progress={ 80 } />
                         <Skill title='Material-UI' progress={ 80 } />
-                        <Skill title='Flask' progress={ 70 } />
+                        <Skill title='Git' progress={ 85 } />
                         <Skill title='Azure Environment' progress={ 70 } />
                     </Grid>
                 </Grid>
