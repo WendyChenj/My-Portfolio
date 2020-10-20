@@ -28,7 +28,7 @@
 @media screen and (max-width: 600px) {
     .edu-item {
         flex-flow: column nowrap;
-        text-align: center;
+        text-align: left;
     }
 
     .edu-item-icon {

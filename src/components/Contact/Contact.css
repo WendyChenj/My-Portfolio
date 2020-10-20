@@ -100,7 +100,7 @@
     }
 
     .contact-end {
-        height: 220px;
+        height: 280px;
     }
 
     .contact-link-info {
@@ -109,6 +109,10 @@
 
     .contact-content {
         padding-top: 32px;
+    }
+
+    .contact-content-text {
+        text-align: left;
     }
 }
 

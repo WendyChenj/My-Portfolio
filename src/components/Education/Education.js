@@ -5,6 +5,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import './Education.css';
 
 const Education = () => {
+    
     return (
         <ContentGrid>
             <div className='main-container'> 
