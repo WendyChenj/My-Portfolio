@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid';
 import ContactButton from '../Layout/ContactButton';
-import { Typography, Grid, Link }  from '@material-ui/core';
+import { Typography, Grid, Link, Hidden }  from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
@@ -26,10 +26,10 @@ const ContactLink = props => {
 
 const Contact = () => {
 
-    return (
+    return ( 
         <div className='contact-main-container'>
             <ContentGrid>
-                <div className='contact-container'>
+                <div className='main-container contact-container'>
                     <Typography variant='h4' color='primary' style={{fontWeight: '900', color: 'black'}} className='contact-title'>
                         Let's get in touch!
                     </Typography>
@@ -43,52 +43,89 @@ const Contact = () => {
                     </div>
                 </div>
             </ContentGrid>
-            <ContentGrid>
-                
-            </ContentGrid>
+            
             <div className='contact-end'>
                 <ContentGrid>
                     <div className='contact-end-container'>
-                        <Grid container spacing={4}>
-                            <Grid item md={6} style={{display: 'flex', flexFlow: 'row nowrap', justifyContent: 'center'}}>
-                                <div className='contact-link-container'>
+                        <Hidden xsDown>
+                            <Grid container>
+                                <Grid item md={6} sm={6} style={{display: 'flex', flexFlow: 'row nowrap', justifyContent: 'center'}}>
+                                    <div className='contact-link-container'>
+                                        <ContactLink title='Linkedin' intro='Connect with me on Linkedin'>
+                                            <Link href='https://www.linkedin.com/in/wenjie-wendy-chen/' target='_blank' rel='noopener'>
+                                                <LinkedInIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
+                                         </Link>
+                                        </ContactLink>
 
-                                    <ContactLink title='Linkedin' intro='Connect with me on Linkedin'>
+                                     <ContactLink title='Github: WendyChenj' intro='Review my codes of my projects'>
+                                            <Link href='https://github.com/WendyChenj' target='_blank' rel='noopener'>
+                                                <GitHubIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
+                                         </Link>
+                                     </ContactLink>
+
+                                        <div style={window.innerWidth > 720 ? null: {marginLeft: '-48px'}}>
+                                            <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true } style={{marginLeft: '64px'}}>
+                                             DOWNLOAD MY CV
+                                            </ContactButton>
+                                        </div>
+                                    </div>
+                                </Grid>
+                                <Grid item md={6} sm={6} style={{display: 'flex', flexFlow: 'row nowrap', justifyContent: 'center'}}>
+                                    <div className='contact-link-container'>
+                                        <ContactLink title='Email' intro='wendychen9395@gmail.com'>
+                                            <Link href='mailto:wendychen9395@gmail.com' target='_blank' rel='noopener'>
+                                                <EmailIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
+                                            </Link>
+                                        </ContactLink>
+                                        <ContactLink title='Cell Phone' intro='(343)-988-8540'>
+                                            <Link href='tel: 3439888540' target='_blank' rel='noopener'>
+                                                <CallIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
+                                            </Link>
+                                        </ContactLink>
+                                    
+                                        <div style={window.innerWidth > 720 ? null: {marginLeft: '-48px'}}>
+                                            <ContactButton href='mailto:wendychen9395@gmail.com' target='_blank' rel='noopener' download={false} >
+                                                HIRE ME
+                                            </ContactButton>
+                                        </div>
+                                    </div>
+                                </Grid>
+                            </Grid>
+                        </Hidden>
+
+                        <Hidden smUp>
+                            <div className='contact-content-extra-small'>
+                                <Grid container>
+                                    <Grid item xs={3} style={{textAlign: 'center', height: '80px'}}>
                                         <Link href='https://www.linkedin.com/in/wenjie-wendy-chen/' target='_blank' rel='noopener'>
                                             <LinkedInIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
                                         </Link>
-                                    </ContactLink>
-
-                                    <ContactLink title='Github: WendyChenj' intro='Review my codes of my projects'>
+                                    </Grid>
+                                    <Grid item xs={3} style={{textAlign: 'center'}}>
                                         <Link href='https://github.com/WendyChenj' target='_blank' rel='noopener'>
                                             <GitHubIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
                                         </Link>
-                                    </ContactLink>
-                                    
-                                    <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true }>
-                                        DOWNLOAD MY CV
-                                    </ContactButton>
-                                </div>
-                            </Grid>
-                            <Grid item md={6} style={{display: 'flex', flexFlow: 'row nowrap', justifyContent: 'center'}}>
-                                <div className='contact-link-container'>
-                                    <ContactLink title='Email' intro='wendychen9395@gmail.com'>
+                                    </Grid>
+                                    <Grid item xs={3} style={{textAlign: 'center'}}>
                                         <Link href='mailto:wendychen9395@gmail.com' target='_blank' rel='noopener'>
                                             <EmailIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
                                         </Link>
-                                    </ContactLink>
-                                    <ContactLink title='Cell Phone' intro='(343)-988-8540'>
+                                    </Grid>
+                                    <Grid item xs={3} style={{textAlign: 'center'}}>
                                         <Link href='tel: 3439888540' target='_blank' rel='noopener'>
                                             <CallIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
                                         </Link>
-                                    </ContactLink>
-                                    
-                                    <ContactButton href='mailto:wendychen9395@gmail.com' target='_blank' rel='noopener' download={false}>
-                                        HIRE ME
+                                    </Grid>
+                                </Grid>
+                                
+                                
+                                <div style={{textAlign: 'center', marginLeft: '-64px'}}>
+                                    <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true } style={{marginLeft: '64px'}}>
+                                        DOWNLOAD MY CV
                                     </ContactButton>
                                 </div>
-                            </Grid>
-                        </Grid>
+                            </div>
+                        </Hidden>
                     </div>
                 </ContentGrid>
             </div>

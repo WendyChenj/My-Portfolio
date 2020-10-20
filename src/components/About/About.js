@@ -1,14 +1,17 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid';
 import ContactButton from '../Layout/ContactButton';
-import { Grid, Typography, Container, List, ListItemText } from '@material-ui/core';
+import { Grid, Typography, Container, List, ListItemText, Hidden } from '@material-ui/core';
 import self from '../../assets/images/self/self.JPG';
+import selfSmall from '../../assets/images/self/self-small.png';
 import './About.css';
+import '../Layout/GlobalCss.css';
 
 const About = () => {
     return (
         <ContentGrid>
-            <Grid container spacing={0}>
+            <Hidden smDown={ true }>
+            <Grid container>
                 <Grid item md={6}>
                     <Container>
                         <div className='pic-card-container'>
@@ -20,40 +23,65 @@ const About = () => {
                     <div className='about-me-main-container'>
                         <Typography variant='h4' className='about-me-title' style={{fontWeight: '900'}}>About me</Typography>
                         <div className='about-me-intro'>
-                            <Typography variant='h6' color='secondary'>Hi, I am a professional front end developer who is fueled by true passion for implementing visual elements and building UX/UI websites.
-                                I consider myself a 'forever student', eager to both practice coding skills through projects and stay in tune with the latest technologies.
+                            <Typography variant='h6' color='secondary'>Hi, I am a professional front end developer who is fueled by true passion for implementing visual elements 
+                                and building UX/UI websites. I consider myself a 'forever student', eager to both practice coding skills through projects 
+                                and stay in tune with the latest technologies.
                             </Typography>
                         </div>
                         <Grid container spacing={2} className='about-me-intro'>
                             <Grid item md={4}>
                                 <List>
-                                    <ListItemText primary='Name:' className='about-me-info' primaryTypographyProps={{variant: 'h6'}}/>
-                                    <ListItemText primary='Date of birth:' className='about-me-info' primaryTypographyProps={{variant: 'h6'}}/>
-                                    <ListItemText primary='Address:' className='about-me-info' primaryTypographyProps={{variant: 'h6'}}/>
-                                    <ListItemText primary='Zip code:' className='about-me-info' primaryTypographyProps={{variant: 'h6'}}/>
-                                    <ListItemText primary='Email:' className='about-me-info' primaryTypographyProps={{variant: 'h6'}}/>
-                                    <ListItemText primary='Phone:' className='about-me-info' primaryTypographyProps={{variant: 'h6'}}/>
+                                    {['Name:', 'Address:', 'Zip Code:', 'Email:', 'Phone:'].map( item => {
+                                        return (
+                                            <ListItemText primary={ item } className='about-me-info' primaryTypographyProps={{variant: 'h6'}} key={ item } />
+                                        );
+                                    })}
                                 </List>
                             </Grid>
                             <Grid item md={6}>
                                 <List>
-                                    <ListItemText primary='Wendy Chen' className='about-me-info' primaryTypographyProps={{variant: 'h6', color: 'secondary'}}/>
-                                    <ListItemText primary='August 1995' className='about-me-info' primaryTypographyProps={{variant: 'h6', color: 'secondary'}}/>
-                                    <ListItemText primary='1551 Lycee Place' className='about-me-info' primaryTypographyProps={{variant: 'h6', color: 'secondary'}}/>
-                                    <ListItemText primary='K1G 4B5' className='about-me-info' primaryTypographyProps={{variant: 'h6', color: 'secondary'}}/>
-                                    <ListItemText primary='wendychen9395@gmail.com' className='about-me-info' primaryTypographyProps={{variant: 'h6', color: 'secondary'}}/>
-                                    <ListItemText primary='(343)-988-8540' className='about-me-info' primaryTypographyProps={{variant: 'h6', color: 'secondary'}}/>
+                                    {['Wendy Chen', 'Ottawa, ON', 'K1G 4B5', 'wendychen9395@gmail.com', '(343)-988-8540'].map( item => {
+                                        return (
+                                            <ListItemText primary={ item } className='about-me-info' primaryTypographyProps={{variant: 'h6', color: 'secondary'}} key={ item }/>
+                                        );
+                                    })}
                                 </List>
                             </Grid>
                         </Grid>
                         <div className='about-me-button-container'>
-                            <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true }>Download My CV</ContactButton>
-                            <ContactButton href='mailto:wendychen9395@gmail.com' download={false}>Hire Me</ContactButton>
+                            <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true } >Download My CV</ContactButton>
                         </div>
-                        
                     </div>     
                 </Grid>
             </Grid>
+            </Hidden>
+
+            <Hidden mdUp={ true }>
+                <div className='main-container'>
+                <div className='about-me-small-container'>
+                    <div>
+                        <img className='pic-item-small' src={ selfSmall } alt='Hello, meet me!' />
+                        
+                    </div>
+                    <Typography variant='h4' className='about-me-title-small' style={{fontWeight: '900'}}>About me</Typography>
+
+                    <div className='about-me-intro-small'>
+                        <Typography variant='h6' color='secondary'>Hi, I am a professional front end developer who is fueled by true passion for implementing visual elements 
+                            and building UX/UI websites. I consider myself a 'forever student', eager to both practice coding skills through projects 
+                            and stay in tune with the latest technologies.
+                        </Typography>
+                    </div>
+
+                    <div style={{marginLeft: '-64px'}}>
+                        <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true }>Download My CV</ContactButton>
+                        <Hidden xsDown>
+                            <ContactButton href='mailto:wendychen9395@gmail.com' download={ true }>Hire Me</ContactButton>
+                        </Hidden>   
+                    </div>
+
+                </div>
+                </div>
+            </Hidden>
         </ContentGrid>
     );
 }

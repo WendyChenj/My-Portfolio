@@ -35,8 +35,6 @@
 }
 
 @keyframes arrowdown {
-    /* from { transformY: scaleY(0); }
-    to { transformY: scaleY(1);} */
     100% {
         margin-top: 25px;
         opacity: 1;
@@ -49,5 +47,11 @@
     0% {
         margin-top: -10px;
         opacity: 0;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .home-arrow-container {
+        height: 50px;
     }
 }
