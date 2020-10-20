@@ -119,6 +119,7 @@
 @media screen and (max-width: 400px) {
     .contact-title {
         text-align: center;
+        padding-top: 0px;
     }
 }
 
