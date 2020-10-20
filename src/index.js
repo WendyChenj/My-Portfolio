@@ -14,7 +14,34 @@ const theme = createMuiTheme({
     secondary: {
       main: '#9e9e9e'
     }
-  }
+  },
+  typography: {
+    fontFamily: [
+      'Play',
+      'Roboto',
+      'sans-serif',
+      '-apple-system',
+    ].join(','),
+
+    body1: {
+      fontSize: '16px',
+    },
+    h6: {
+      fontSize: '1.25rem'
+    },
+    h5: {
+      fontSize: '1.5rem'
+    },
+    h4: {
+      fontSize: '2.0rem'
+    },
+    h3: {
+      fontSize: '3rem'
+    },
+    h2: {
+      fontSize: '3.75rem'
+    },
+  },
 });
 
 ReactDOM.render(
