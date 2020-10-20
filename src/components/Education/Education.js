@@ -1,20 +1,20 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid';
-import { Divider, Typography } from '@material-ui/core';
+import { Divider, Typography, Hidden } from '@material-ui/core';
 import SchoolIcon from '@material-ui/icons/School';
 import './Education.css';
 
 const Education = () => {
     return (
         <ContentGrid>
-            <div className='education-container'>
+            <div className='main-container'> 
                 <Typography variant='h4' color='primary' style={{fontWeight: '900', padding: '112px 0 16px 0'}}>Education</Typography>
                 <div className='education-info-container'>
                     <div className='edu-item'>
                         <div className='edu-item-icon'>
                             <SchoolIcon color='primary' fontSize='large' style={{border: '2px solid', padding: '8px', borderRadius: '10px'}}/>
                         </div>
-                        <div>
+                        <div className='edu-item-title'>
                             <Typography color='primary' variant='h6' style={{fontWeight: '800'}}>2020.04-2020.06</Typography>
                             <Typography variant='h5' style={{fontWeight: '800', paddingBottom: '8px'}}>React - The Complete Guide (Hooks, React Router, Redux)</Typography>
                             <Typography variant='h6' style={{fontWeight: '600', paddingBottom: '8px'}}>Online Course taught by Maximilian Schwarzmüller</Typography>
@@ -25,8 +25,15 @@ const Education = () => {
                             </Typography>
                         </div>
                     </div>
+                    
+                    <Hidden xsDown>
+                        <Divider variant='inset'/>
+                    </Hidden>
 
-                    <Divider variant='inset'/>
+                    <Hidden smUp>
+                        <Divider />
+                    </Hidden>
+                    
 
                     <div className='edu-item'>
                         <div className='edu-item-icon'>

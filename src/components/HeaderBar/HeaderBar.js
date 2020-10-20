@@ -1,5 +1,6 @@
-import React from 'react';
-import { AppBar, Container, Typography, useScrollTrigger } from '@material-ui/core';
+import React, { useState } from 'react';
+import { AppBar, Container, Typography, useScrollTrigger, Hidden, IconButton, Drawer } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 import './HeaderBar.css';
 import { Link } from 'react-scroll';
 import Home from '../Home/Home';
@@ -25,36 +26,53 @@ const ElevationScroll = props => {
     });
 }
 
+const HeaderLinks = props => {
+    return (
+        <ul className={props.linksContainer}>
+            {['Home', 'About', 'Education', 'Projects', 'Skills', 'Contact'].map( ele => {
+                return (
+                    <li className={props.linkItem} key={ ele }>
+                        <Link activeClass='active' to={`#${ele.toLowerCase()}`} spy={true} smooth={true} duration={500}  onClick={props.clicked}>
+                            { ele }
+                        </Link>
+                    </li>
+                );
+            })}
+        </ul>
+    );
+}
+
 const HeaderBar = () => {
+
+    const [drawerOpen, setDrawerOpen ] = useState(false);
+
+    const toggleDrawerOpen = () => {
+        setDrawerOpen(true);
+    }
+
+    const toggleDrawerClose = () => {
+        setDrawerOpen(false);
+    }
 
     return (
         <>
             <ElevationScroll>
                 <AppBar className='headerBar'>
                     <Container maxWidth='lg' className='header-container'>
-                        <Typography variant='h4' style={{color: 'black', fontWeight: '900', paddingLeft: '32px'}}>WENDY</Typography>
-                        <div>
-                            <ul className='header-container-items'>
-                                <li className='header-container-item'>
-                                    <Link activeClass='active' to='#home' spy={true} smooth={true} duration={500}>Home</Link>
-                                </li>
-                                <li className='header-container-item'>
-                                    <Link activeClass='active' to='#about' spy={true} smooth={true} duration={500}>About</Link>
-                                </li>
-                                <li className='header-container-item'>
-                                    <Link activeClass='active' to='#education' spy={true} smooth={true} duration={500}>Education</Link>
-                                </li>
-                                <li className='header-container-item'>
-                                    <Link activeClass='active' to='#projects' spy={true} smooth={true} duration={500}>Projects</Link>
-                                </li>
-                                <li className='header-container-item'>
-                                    <Link activeClass='active' to='#skills' spy={true} smooth={true} duration={500}>Skills</Link>
-                                </li>
-                                <li className='header-container-item'>
-                                    <Link activeClass='active' to='#contact' spy={true} smooth={true} duration={500}>Contact Me</Link>
-                                </li>
-                            </ul>
-                        </div>
+                        <Typography variant='h4' style={{color: 'black', fontWeight: '900'}} className='header-wendy'>
+                            WENDY
+                        </Typography>
+                        <Hidden smDown={ true }>
+                            <HeaderLinks linksContainer='header-container-items' linkItem='header-container-item' />
+                        </Hidden>
+                        <Hidden mdUp={ true }>
+                            <IconButton onClick={toggleDrawerOpen}>
+                                <MenuIcon style={{color: 'black', paddingRight: '16px'}} fontSize='large' />
+                            </IconButton>
+                            <Drawer anchor='right' open={drawerOpen} onClose={toggleDrawerClose}>
+                                <HeaderLinks linksContainer='drawer-container-items' linkItem='drawer-container-item' clicked={toggleDrawerClose} />
+                            </Drawer>
+                        </Hidden>
                    </Container>
                 </AppBar>
             </ElevationScroll>

@@ -10,12 +10,11 @@
 
 .pic-item {
     padding-top: 112px;
-    width: 500px;
-    height: 700px;
+    width: 420px;
+    height: 600px;
 }
 
 .about-me-main-container {
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -35,24 +34,58 @@
 .about-me-info {
     font-size: 32px;
     font-weight: 600;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
 }
 
 .about-me-button-container {
     margin-left: -32px;
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (min-height: 860px) {
     .pic-item {
-        width: 420px;
-        height: 600px;
+        padding-top: 170px;
+    }
+
+    .about-me-title {
+        padding-top: 170px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .about-me-info {
+        padding-bottom: 8px;
     }
 }
 
-@media screen and (max-height: 600px) {
-    .pic-item {
-        width: 350px;
-        height: 500px;
-    }
+@media screen and (max-width: 1370px) {
+    .about-me-title {
+        padding-bottom: 16px;
+    }  
+
+    .about-me-intro {
+        padding: 0px 32px;
+    } 
+}
+
+.about-me-small-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 112px;
+}
+
+.pic-item-small {
+    width: 200px;
+    height: 200px;
+}
+
+.about-me-title-small {
+    padding-top: 32px;
+}
+
+.about-me-intro-small {
+    padding: 32px 0;
+    text-align: center;
 }

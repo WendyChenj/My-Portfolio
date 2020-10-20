@@ -1,20 +1,39 @@
-.education-container {
-    width: 100%;
-    padding: 0 60px;
-}
-
-.education-info-container {
-    width: 100%;
-}
-
 .edu-item {
     padding: 32px 64px;
     display: flex;
     flex-flow: row nowrap;
 }
 
+@media screen and (max-width: 960px) {
+    .edu-item {
+        padding: 32px 16px;
+    }
+}
+
+
 .edu-item-icon {
     padding: 0 32px 0 16px;
+}
+
+@media screen and (max-width: 960px) {
+    .edu-item {
+        padding: 32px 0px;
+    }
+
+    .edu-item-icon {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .edu-item {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+
+    .edu-item-icon {
+        padding: 0 0 8px 0;
+    }
 }
 
 

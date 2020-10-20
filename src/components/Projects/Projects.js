@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid'; 
-import { Divider, Typography, Chip, GridList, GridListTile, Link } from '@material-ui/core';
+import { Divider, Typography, Chip, GridList, GridListTile, Link, Hidden } from '@material-ui/core';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import LinkIcon from '@material-ui/icons/Link';
@@ -21,39 +21,43 @@ const images = importAll(require.context( '../../assets/images/burgerProject', f
 
 const BurgerProjectImgs = () => {
     return (
-        <GridList cellHeight={400} style={{ flexWrap: 'nowrap', transform:'translateZ(0)'}}>
+        <GridList cellHeight={window.innerWidth > 700 ? 400: 300 } style={{ flexWrap: 'nowrap', transform:'translateZ(0)'}}>
             {Object.keys(images).map( img => {
                 return (
-                    <GridListTile cols={1} rows={1} key={img} style={{width: '350px', height: '400px'}}>
-                        <img src={images[img]} alt={img} style={{width: '320px', height: '400px'}}/>
+                    <GridListTile cols={1} rows={1} key={img} >
+                        <img src={images[img]} alt={img} className='project-image'/>
                     </GridListTile>
                 )}
             )}
         </GridList>
     );
 }
+ 
+const Projects = () => {
 
-const Education = () => {
+    console.log(window.innerWidth);
 
     return (
         <ContentGrid>
-            <div className='projects-container'>
+            <div className='main-container'>
                 <Typography variant='h4' color='primary' style={{fontWeight: '900', padding: '112px 0 16px 0'}}>Projects</Typography>
 
                 <div className='project-item'>
                     <div className='project-item-icon'>
                         <FastfoodIcon color='primary' fontSize='large'  />
                     </div>
-                    <div style={{width: 'calc(100% - 100px)'}}>
+                    <div className='project-images-title-container'>
                         <Typography color='primary' variant='h6' style={{fontWeight: '800', paddingBottom: '8px'}}>2020.06-2020.09</Typography> 
                         <div className='project-item-link'>
-                            <Typography variant='h5' style={{fontWeight: '800', paddingBottom: '8px'}}>My Burger Order Application</Typography>
-                            <Link href='https://react-my-burger-1f18b.web.app/' target='_blank' rel='noopener'>
-                                <LinkIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
-                            </Link>
-                            <Link href='https://github.com/WendyChenj/My-Burger-Builder' target='_blank' rel='noopener'>
-                                <GitHubIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
-                            </Link>
+                            <Typography variant='h5' style={{fontWeight: '800', paddingBottom: '8px'}}>
+                                My Burger Order Application
+                                <Link href='https://react-my-burger-1f18b.web.app/' target='_blank' rel='noopener'>
+                                    <LinkIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
+                                </Link>
+                                <Link href='https://github.com/WendyChenj/My-Burger-Builder' target='_blank' rel='noopener'>
+                                    <GitHubIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
+                                </Link>
+                            </Typography>  
                         </div> 
                                               
                         <Typography color='secondary' style={{paddingBottom: '8px'}}>
@@ -74,7 +78,13 @@ const Education = () => {
                     </div>
                 </div>
 
-                <Divider variant='inset' />
+                <Hidden xsDown>
+                    <Divider variant='inset'/>
+                </Hidden>
+
+                <Hidden smUp>
+                    <Divider />
+                </Hidden>
 
                 <div className='project-item'>
                     <div className='project-item-icon'>
@@ -108,4 +118,4 @@ const Education = () => {
     );
 }
 
-export default Education;
+export default Projects;

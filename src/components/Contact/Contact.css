@@ -1,15 +1,12 @@
 .contact-main-container {
-    width: 100%;
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-
 }
 
 .contact-container {
-    width: 100%;
-    padding-top: 112px;
+    padding-top: 128px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -20,7 +17,7 @@
 }
 
 .contact-content {
-    padding: 64px 112px;
+    padding: 96px 32px;
 }
 
 .contact-content-text {
@@ -29,14 +26,13 @@
 }
 
 .contact-end {
+    padding: 32px;
     background-color: #f1d5f6;
-    width: 100%;
     height: 450px;
 }
 
 .contact-end-container {
-    width: 100%;
-    padding-top:  48px;
+    padding-top:  32px;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -70,6 +66,64 @@
     margin-left:64px;
     width: 200px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+    .contact-content {
+        padding: 64px 0px;
+    }
+
+    .contact-end{
+        padding: 0 16px;
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .contact-content {
+        padding: 64px 0px;
+    }
+
+    .contact-end{
+        padding: 0 8px;
+        padding-bottom: 16px;
+    }
+
+    .contact-link-subcontainer {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-end-container {
+        padding: 32px 16px 16px;
+    }
+
+    .contact-end {
+        height: 220px;
+    }
+
+    .contact-link-info {
+        padding-left: 0px;
+    }
+
+    .contact-content {
+        padding-top: 32px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-title {
+        text-align: center;
+    }
+}
+
+
+.contact-content-extra-small {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding-top: 16px;
 }
 
 
