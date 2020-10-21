@@ -24,7 +24,7 @@ const BurgerProjectImgs = () => {
         <GridList cellHeight={window.innerWidth > 700 ? 400: 300 } style={{ flexWrap: 'nowrap', transform:'translateZ(0)'}}>
             {Object.keys(images).map( img => {
                 return (
-                    <GridListTile cols={1} rows={1} key={img} >
+                    <GridListTile cols={window.innerWidth > 700 ? 0.8: 1.2} rows={1} key={img} >
                         <img src={images[img]} alt={img} className='project-image'/>
                     </GridListTile>
                 )}
