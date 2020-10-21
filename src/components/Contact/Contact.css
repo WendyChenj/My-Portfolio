@@ -98,7 +98,7 @@
     }
 
     .contact-end {
-        height: 280px;
+        height: 220px;
     }
 
     .contact-link-info {
@@ -121,13 +121,9 @@
     }
 }
 
-@media screen and (max-height: 800px) {
+@media (max-width: 600px and max-height: 800px) {
     .contact-container {
         padding-top: 112px;
-    }
-
-    .contact-end {
-        height: 220px;
     }
 }
 
