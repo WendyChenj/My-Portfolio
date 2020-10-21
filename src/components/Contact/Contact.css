@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    overflow: scroll;
 }
 
 .contact-container {
@@ -117,6 +118,16 @@
     .contact-title {
         text-align: center;
         padding-top: 0px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .contact-container {
+        padding-top: 112px;
+    }
+
+    .contact-end {
+        height: 220px;
     }
 }
 
