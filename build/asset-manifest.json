@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0ce10f5e.chunk.css",
+    "main.js": "/static/js/main.5d75a155.chunk.js",
+    "main.js.map": "/static/js/main.5d75a155.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
+    "static/js/2.29d2d74b.chunk.js": "/static/js/2.29d2d74b.chunk.js",
+    "static/js/2.29d2d74b.chunk.js.map": "/static/js/2.29d2d74b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a581d72ccdaa7e3d3b0788e54e9ff99c.js": "/precache-manifest.a581d72ccdaa7e3d3b0788e54e9ff99c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.0ce10f5e.chunk.css.map": "/static/css/main.0ce10f5e.chunk.css.map",
+    "static/js/2.29d2d74b.chunk.js.LICENSE.txt": "/static/js/2.29d2d74b.chunk.js.LICENSE.txt",
+    "static/media/1-home-page.png": "/static/media/1-home-page.204a9a0a.png",
+    "static/media/2-account-page.png": "/static/media/2-account-page.8741a60a.png",
+    "static/media/3-ingredients-page.png": "/static/media/3-ingredients-page.10d09b22.png",
+    "static/media/4-contact-form-page.png": "/static/media/4-contact-form-page.171e40db.png",
+    "static/media/5-orders-page.png": "/static/media/5-orders-page.31c65e49.png",
+    "static/media/6-responsive-home-page.png": "/static/media/6-responsive-home-page.55d3edf4.png",
+    "static/media/7-responsive-ingres-page.png": "/static/media/7-responsive-ingres-page.9cbd5073.png",
+    "static/media/8-responsive-account-page.png": "/static/media/8-responsive-account-page.248f8e77.png",
+    "static/media/9-responsive-orders-page.png": "/static/media/9-responsive-orders-page.a3fcd61b.png",
+    "static/media/self-small.png": "/static/media/self-small.bd8c9d70.png",
+    "static/media/self.JPG": "/static/media/self.4521adc6.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b3488d1.js",
+    "static/js/2.29d2d74b.chunk.js",
+    "static/css/main.0ce10f5e.chunk.css",
+    "static/js/main.5d75a155.chunk.js"
+  ]
+}
