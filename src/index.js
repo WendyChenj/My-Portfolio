@@ -17,6 +17,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
+      'Nunito',
       'Play',
       'Roboto',
       'sans-serif',
@@ -25,21 +26,23 @@ const theme = createMuiTheme({
 
     body1: {
       fontSize: '16px',
+      fontWeight: '400'
     },
     h6: {
-      fontSize: '1.25rem'
+      fontSize: '1.25rem',
+      fontWeight: '600'
     },
     h5: {
-      fontSize: '1.5rem'
+      fontSize: '1.5rem',
+      fontWeight: '700',
     },
     h4: {
-      fontSize: '2.0rem'
+      fontSize: '2.0rem',
+      fontWeight: '800'
     },
     h3: {
-      fontSize: '3rem'
-    },
-    h2: {
-      fontSize: '3.75rem'
+      fontSize: '3rem',
+      fontWeight: '900'
     },
   },
 });
