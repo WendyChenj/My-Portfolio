@@ -7,26 +7,26 @@ Please meet me at my website and contact me if you are interested in my skillset
 
 Below screenshots are provided in screen size 768 * 1024. Please feel free to view my portfolio at multiple divices. 
 
-###### Home Page
-![alt text](https://github.com/WendyChenj/My-Portfolio/blob/media/HomePage.png)
+### Home Page
+<img src="https://github.com/WendyChenj/My-Portfolio/blob/media/HomePage.png" width="350">
 
-###### Side Drawer 
-![alt text](https://github.com/WendyChenj/My-Portfolio/blob/media/Drawer.png)
+### Side Drawer 
+<img src="https://github.com/WendyChenj/My-Portfolio/blob/media/Drawer.png" width="350">
 
-###### About Me Page
-![alt text](https://github.com/WendyChenj/My-Portfolio/blob/media/AboutPage.png)
+### About Me Page
+<img src="https://github.com/WendyChenj/My-Portfolio/blob/media/AboutPage.png" width="350">
 
-###### Education Page
-![alt text](https://github.com/WendyChenj/My-Portfolio/blob/media/EducationPage.png)
+### Education Page
+<img src="https://github.com/WendyChenj/My-Portfolio/blob/media/EducationPage.png" width="350">
 
-###### Projects Page
-![alt text](https://github.com/WendyChenj/My-Portfolio/blob/media/ProjectsPage.png)
+### Projects Page
+<img src="https://github.com/WendyChenj/My-Portfolio/blob/media/ProjectsPage.png" width="350">
 
-###### Skills Page
-![alt text](https://github.com/WendyChenj/My-Portfolio/blob/media/SkillsPage.png)
+### Skills Page
+<img src="https://github.com/WendyChenj/My-Portfolio/blob/media/SkillsPage.png" width="350">
 
-###### Contact Me Page
-![alt text](https://github.com/WendyChenj/My-Portfolio/blob/media/ContactMePage.png)
+### Contact Me Page
+<img src="https://github.com/WendyChenj/My-Portfolio/blob/media/ContactMePage.png" width="350">
 
 
 
