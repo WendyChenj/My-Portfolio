@@ -9,7 +9,7 @@ import '../Layout/GlobalCss.css';
 
 const About = () => {
     return (
-        <ContentGrid>
+        <ContentGrid id='about'>
             <Hidden smDown={ true }>
             <Grid container>
                 <Grid item md={6}>

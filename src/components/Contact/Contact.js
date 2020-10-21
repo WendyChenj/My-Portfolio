@@ -35,7 +35,7 @@ const Contact = () => {
                     </Typography>
 
                     <div className='contact-content'>
-                        <Typography variant='h6' color='secondary' className='contact-content-text'>
+                        <Typography variant='h6' color='secondary' className='contact-content-text' style={{marginBottom: '32px'}}>
                             I'm always looking for inspirational projects for which I can help find solutions and create beautiful and powerful websites. 
                             So if you are interested on my skillsets and aptitudes and have amazing projects on hands, please consider me for your team and 
                             send me message with your information! I will get back to you as soon as possible!
