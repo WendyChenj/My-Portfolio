@@ -52,10 +52,10 @@ const Projects = () => {
                             <Typography variant='h5' style={{fontWeight: '800', paddingBottom: '8px'}}>
                                 My Burger Order Application
                                 <Link href='https://react-my-burger-1f18b.web.app/' target='_blank' rel='noopener'>
-                                    <LinkIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
+                                    <LinkIcon style={{paddingLeft: '8px', textAlign: 'center'}} />
                                 </Link>
                                 <Link href='https://github.com/WendyChenj/My-Burger-Builder' target='_blank' rel='noopener'>
-                                    <GitHubIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
+                                    <GitHubIcon style={{paddingLeft: '8px', textAlign: 'center'}} />
                                 </Link>
                             </Typography>  
                         </div> 
