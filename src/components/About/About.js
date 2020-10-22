@@ -1,9 +1,10 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid';
 import ContactButton from '../Layout/ContactButton';
-import { Grid, Typography, Container, List, ListItemText, Hidden } from '@material-ui/core';
+import { Grid, Typography, Container, List, ListItemText, Hidden, Button } from '@material-ui/core';
 import self from '../../assets/images/self/self.JPG';
 import selfSmall from '../../assets/images/self/self-small.png';
+import resume from '../../assets/files/Wendy_Chen_resume.pdf';
 import './About.css';
 import '../Layout/GlobalCss.css';
 
@@ -49,7 +50,11 @@ const About = () => {
                             </Grid>
                         </Grid>
                         <div className='about-me-button-container'>
-                            <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true } >Download My CV</ContactButton>
+                            <Button variant='contained' color='primary' href={ resume }
+                               style={{width: '200px', fontWeight: '600', marginLeft: '64px'}} 
+                               download='Wendy_Chen_resume_front_end_developer.pdf' >
+                                   DOWNLOAD MY CV
+                            </Button>
                         </div>
                     </div>     
                 </Grid>
@@ -73,9 +78,13 @@ const About = () => {
                     </div>
 
                     <div style={{marginLeft: '-64px'}}>
-                        <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true }>Download My CV</ContactButton>
+                        <Button variant='contained' color='primary' href={ resume } 
+                           style={{width: '200px', fontWeight: '600', marginLeft: '64px'}} 
+                           download='Wendy_Chen_resume_front_end_developer.pdf' >
+                            Download My CV
+                        </Button>
                         <Hidden xsDown>
-                            <ContactButton href='mailto:wendychen9395@gmail.com' download={ true }>Hire Me</ContactButton>
+                            <ContactButton href='mailto:wendychen9395@gmail.com'>Hire Me</ContactButton>
                         </Hidden>   
                     </div>
 
