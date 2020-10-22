@@ -5,7 +5,7 @@ Wendy Chen is a Front End Developer with experience of front end web development
 Please meet me at my website and contact me if you are interested in my skillsets and aptitude.
 [http://www.hiwendychen.com/]
 
-Below screenshots are provided in screen size 768 * 1024. Please feel free to view my portfolio at multiple divices. 
+Screenshots below are provided in screen size 768 * 1024. Please feel free to view my portfolio at multiple divices. 
 
 ### Home Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/HomePage.png" width="350">
