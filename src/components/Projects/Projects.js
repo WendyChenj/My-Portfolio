@@ -20,11 +20,22 @@ function importAll(r) {
 const images = importAll(require.context( '../../assets/images/burgerProject', false, /\.(png|jpe?g|svg)$/));
 
 const BurgerProjectImgs = () => {
+    
+    let columns = null;
+
+    if (window.innerWidth >= 1000 & window.innerWidth < 1700) {
+        columns = 0.7;
+    } else if (window.innerWidth <= 1000 ) {
+        columns = 1.2;
+    } else {
+        columns = 0.55;
+    }
+
     return (
         <GridList cellHeight={window.innerWidth > 700 ? 400: 300 } style={{ flexWrap: 'nowrap', transform:'translateZ(0)'}}>
             {Object.keys(images).map( img => {
                 return (
-                    <GridListTile cols={window.innerWidth > 700 ? 0.8: 1.2} rows={1} key={img} >
+                    <GridListTile cols={ columns } rows={1} key={img} >
                         <img src={images[img]} alt={img} className='project-image'/>
                     </GridListTile>
                 )}
