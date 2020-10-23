@@ -23,9 +23,9 @@ const BurgerProjectImgs = () => {
     
     let columns = null;
 
-    if (window.innerWidth >= 700 & window.innerWidth < 1700) {
+    if (window.innerWidth >= 1000 & window.innerWidth < 1700) {
         columns = 0.7;
-    } else if (window.innerWidth <= 700 ) {
+    } else if (window.innerWidth <= 1000 ) {
         columns = 1.2;
     } else {
         columns = 0.55;
