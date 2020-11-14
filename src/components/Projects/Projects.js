@@ -7,6 +7,7 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import './Projects.css';
+import BurgerProjectImgs from './BurgerProjectImgs/BurgerProjectImgs';
  
 const Projects = () => {
 
