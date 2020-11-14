@@ -64,12 +64,12 @@
     .project-item {
         display: flex;
         flex-flow: column nowrap;
-        text-align: center;
+        text-align: left;
     }
 
     .project-images-title-container {
         width: calc(100% - 16px);
-        text-align: center;
+        text-align: left;
     }
 
     .project-item-icon {
@@ -77,7 +77,7 @@
     }
 
     .project-item-link {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .project-images-gridlist {
@@ -91,6 +91,6 @@
     }
 
     .project-item-tech-stack {
-        justify-content: center;
+        justify-content: left;
     }
 }

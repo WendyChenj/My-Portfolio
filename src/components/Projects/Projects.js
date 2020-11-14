@@ -7,11 +7,8 @@ import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import './Projects.css';
-import BurgerProjectImgs from './BurgerProjectImgs/BurgerProjectImgs';
  
 const Projects = () => {
-
-    console.log(window.innerWidth);
 
     return (
         <ContentGrid>
@@ -28,10 +25,10 @@ const Projects = () => {
                             <Typography variant='h5' style={{fontWeight: '800', paddingBottom: '8px'}}>
                                 Burger Order E-commerce Application
                                 <Link href='https://react-my-burger-1f18b.web.app/' target='_blank' rel='noopener'>
-                                    <LinkIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
+                                    <LinkIcon style={{paddingLeft: '8px', textAlign: 'center'}} />
                                 </Link>
                                 <Link href='https://github.com/WendyChenj/My-Burger-Builder' target='_blank' rel='noopener'>
-                                    <GitHubIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
+                                    <GitHubIcon style={{paddingLeft: '8px', textAlign: 'center'}} />
                                 </Link>
                             </Typography>  
                         </div> 

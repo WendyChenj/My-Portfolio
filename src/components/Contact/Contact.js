@@ -1,11 +1,12 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid';
 import ContactButton from '../Layout/ContactButton';
-import { Typography, Grid, Link, Hidden }  from '@material-ui/core';
+import { Typography, Grid, Link, Hidden, Button }  from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import CallIcon from '@material-ui/icons/Call';
+import resume from '../../assets/files/Wendy_Chen_resume.pdf';
 import './Contact.css';
 
 const ContactLink = props => {
@@ -35,7 +36,7 @@ const Contact = () => {
                     </Typography>
 
                     <div className='contact-content'>
-                        <Typography variant='h6' color='secondary' className='contact-content-text'>
+                        <Typography variant='h6' color='secondary' className='contact-content-text' style={{marginBottom: '32px'}}>
                             I'm always looking for inspirational projects for which I can help find solutions and create beautiful and powerful websites. 
                             So if you are interested on my skillsets and aptitudes and have amazing projects on hands, please consider me for your team and 
                             send me message with your information! I will get back to you as soon as possible!
@@ -64,9 +65,11 @@ const Contact = () => {
                                      </ContactLink>
 
                                         <div style={window.innerWidth > 720 ? null: {marginLeft: '-48px'}}>
-                                            <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true } style={{marginLeft: '64px'}}>
-                                             DOWNLOAD MY CV
-                                            </ContactButton>
+                                            <Button variant='contained' color='primary' href={resume} 
+                                               style={{width: '200px', fontWeight: '600', marginLeft: '64px'}} 
+                                               download='Wendy-Chen-resume-front-end-developer' >
+                                                DOWNLOAD MY CV
+                                            </Button>
                                         </div>
                                     </div>
                                 </Grid>
@@ -120,9 +123,11 @@ const Contact = () => {
                                 
                                 
                                 <div style={{textAlign: 'center', marginLeft: '-64px'}}>
-                                    <ContactButton href='../../assets/files/Wendy_Chen_resume.pdf' download={ true } style={{marginLeft: '64px'}}>
-                                        DOWNLOAD MY CV
-                                    </ContactButton>
+                                    <Button variant='contained' color='primary' href={resume} 
+                                               style={{width: '200px', fontWeight: '600', marginLeft: '64px'}} 
+                                               download='Wendy-Chen-resume-front-end-developer' >
+                                                DOWNLOAD MY CV
+                                    </Button>
                                 </div>
                             </div>
                         </Hidden>

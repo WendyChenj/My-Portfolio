@@ -5,6 +5,7 @@ import SchoolIcon from '@material-ui/icons/School';
 import './Education.css';
 
 const Education = () => {
+    
     return (
         <ContentGrid>
             <div className='main-container'> 
@@ -49,7 +50,13 @@ const Education = () => {
                         </div>
                     </div>
 
-                    <Divider variant='inset'/>
+                    <Hidden xsDown>
+                        <Divider variant='inset'/>
+                    </Hidden>
+
+                    <Hidden smUp>
+                        <Divider />
+                    </Hidden>
 
                     <div className='edu-item'>
                         <div className='edu-item-icon'>
