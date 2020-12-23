@@ -28,9 +28,5 @@ Screenshots below are provided in screen size 768 * 1024. Please feel free to vi
 ### Contact Me Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/ContactMePage.png" width="350">
 
-
-
-
-
-
+@ Happy Coding - WENDY 
 
