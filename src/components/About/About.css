@@ -1,4 +1,4 @@
-
+/* 
 
 
 .pic-card-container {
@@ -88,4 +88,30 @@
 .about-me-intro-small {
     padding: 32px 0;
     text-align: left;
+} */
+
+.about-section {
+  text-align: center;
+  padding-top: 112px;
+}
+
+.about-me-subtitle {
+  padding-top: 16px;
+  letter-spacing: 5px;
+  padding-bottom: 64px;
+}
+
+.pic-item-small {
+  width: 160px;
+  height: 160px;
+}
+
+.about-me-intro {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-intro h6 {
+  width: 800px;
 }
