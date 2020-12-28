@@ -5,6 +5,9 @@ import { Grid, Typography, Container, List, ListItemText, Hidden, Button } from 
 import self from '../../assets/images/self/self.JPG';
 import selfSmall from '../../assets/images/self/self-small.png';
 import resume from '../../assets/files/Wendy_Chen_resume.pdf';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
 import './About.css';
 import '../Layout/GlobalCss.css';
 
@@ -18,9 +21,15 @@ const About = () => {
                <img className='pic-item-small' src={ selfSmall } alt='Hello, meet me!' />
             </div>
 
+            <div className="button-groups">
+                <LinkedInIcon fontSize="large" />
+                <GitHubIcon fontSize="large"/>
+                <EmailIcon fontSize="large" />
+            </div>
+
             <div className='about-me-intro'>
                 <Typography variant='h6' color='secondary'>Hi, I am a professional front end developer who is fueled by true passion for implementing visual elements 
-                   and building UX/UI websites. After obtaining my Master's Degree, I gained experience by volunteering startup company and using ReactJS to create resusable components. Also, I consider myself a 'forever student', eager to both practice coding skills through projects 
+                   and building UX/UI websites. After obtaining my Master's Degree, I gained experience by volunteering startup company and using ReactJS to create reusable components. Also, I consider myself a 'forever student', eager to both practice coding skills through projects 
                    and stay in tune with the latest technologies :)
                 </Typography>
             </div>
