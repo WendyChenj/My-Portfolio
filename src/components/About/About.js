@@ -8,6 +8,7 @@ import resume from '../../assets/files/Wendy_Chen_resume.pdf';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
+import { IconLink } from '../utilities/IconLink';
 import './About.css';
 import '../Layout/GlobalCss.css';
 
@@ -22,9 +23,15 @@ const About = () => {
             </div>
 
             <div className="button-groups">
-                <LinkedInIcon fontSize="large" />
-                <GitHubIcon fontSize="large"/>
-                <EmailIcon fontSize="large" />
+                <IconLink href="">
+                    <LinkedInIcon fontSize="large" />
+                </IconLink> 
+                <IconLink href="">
+                    <EmailIcon fontSize="large" />
+                </IconLink> 
+                <IconLink href="">
+                    <GitHubIcon fontSize="large"/>
+                </IconLink>              
             </div>
 
             <div className='about-me-intro'>
