@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { SectionWrapper } from "../utilities/SectionWrapper";
+import EducationTimeline from "./EducationTimeline";
 import ContentGrid from '../Layout/ContentGrid';
 import { Divider, Typography, Hidden } from '@material-ui/core';
 import SchoolIcon from '@material-ui/icons/School';
@@ -10,7 +11,7 @@ const Education = () => {
     
     return (
         <SectionWrapper title="Education" subtitle="MY DEGREES AND RELEVANT ACADEMIC ACCOMPLISHMENTS">
-
+            <EducationTimeline />
         </SectionWrapper>
         // <ContentGrid>
         //     <div className='main-container'> 
