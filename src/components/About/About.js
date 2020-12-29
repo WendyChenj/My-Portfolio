@@ -23,13 +23,13 @@ const About = () => {
             </div>
 
             <div className="button-groups">
-                <IconLink href="">
+                <IconLink href="https://www.linkedin.com/in/wenjie-wendy-chen/">
                     <LinkedInIcon fontSize="large" />
                 </IconLink> 
-                <IconLink href="">
+                <IconLink href="mailto:wendychen9395@gmail.com">
                     <EmailIcon fontSize="large" />
                 </IconLink> 
-                <IconLink href="">
+                <IconLink href="https://github.com/WendyChenj/">
                     <GitHubIcon fontSize="large"/>
                 </IconLink>              
             </div>
