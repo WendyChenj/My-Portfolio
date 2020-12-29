@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { SectionWrapper } from "../utilities/SectionWrapper";
 import ContentGrid from '../Layout/ContentGrid';
 import { Divider, Typography, Hidden } from '@material-ui/core';
 import SchoolIcon from '@material-ui/icons/School';
@@ -7,10 +9,9 @@ import './Education.css';
 const Education = () => {
     
     return (
-        <div className="education-section">
-            <Typography variant='h4' style={{fontWeight: '900'}}>Education</Typography>
-            <Typography>My Degrees and relevant academic accomplishments</Typography>
-        </div>
+        <SectionWrapper title="Education" subtitle="MY DEGREES AND RELEVANT ACADEMIC ACCOMPLISHMENTS">
+
+        </SectionWrapper>
         // <ContentGrid>
         //     <div className='main-container'> 
         //         <Typography variant='h4' color='primary' style={{fontWeight: '900', padding: '112px 0 16px 0'}}>Education</Typography>
