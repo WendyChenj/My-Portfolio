@@ -10,7 +10,7 @@ import './Education.css';
 const Education = () => {
     
     return (
-        <SectionWrapper title="Education" subtitle="MY DEGREES AND RELEVANT ACADEMIC ACCOMPLISHMENTS">
+        <SectionWrapper title="Professional Experience" subtitle="WORK EXPERIENCE AND RELEVANT ACADEMIC ACCOMPLISHMENTS">
             <EducationTimeline />
         </SectionWrapper>
         // <ContentGrid>

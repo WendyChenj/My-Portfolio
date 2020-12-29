@@ -15,7 +15,7 @@ import '../Layout/GlobalCss.css';
 const About = () => {
     return (
         <div className="about-section">
-            <Typography variant='h4' className='about-me-title' style={{fontWeight: '900'}}>About me</Typography>
+            <Typography variant='h4' className='about-me-title' style={{fontWeight: '900'}}>About Me</Typography>
             <Typography className="about-me-subtitle" >GET TO KNOW ME BEFORE YOU DIVE INTO MY CONTENT</Typography>
 
             <div>
