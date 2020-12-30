@@ -5,10 +5,12 @@ import { Divider, Typography, Chip, Link, Hidden } from '@material-ui/core';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import './Projects.css';
+import BurgerProjectImgs from './BurgerProjectImgs/BurgerProjectImgs';
  
 const Projects = () => {
 
@@ -19,7 +21,47 @@ const Projects = () => {
 
                 <div className='project-item'>
                     <div className='project-item-icon'>
-                        <FastfoodIcon color='primary' fontSize='large'  />
+                        <FormatListBulletedIcon fontSize='large' style={{color: '#bc4749'}} />
+                    </div>
+                    <div className='project-images-title-container'>
+                        <Typography color='primary' variant='h6' style={{fontWeight: '800', paddingBottom: '8px'}}>2020.11</Typography> 
+                        <div className='project-item-link'>
+                            <Typography variant='h5' style={{fontWeight: '800', paddingBottom: '8px'}}>
+                                Todo Management App
+                                <Link href='https://gifted-ptolemy-72f282.netlify.app' target='_blank' rel='noopener'>
+                                    <LinkIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
+                                </Link>
+                                <Link href='https://github.com/WendyChenj/react-typescript' target='_blank' rel='noopener'>
+                                    <GitHubIcon style={{paddingBottom: '8px', paddingLeft: '8px'}} />
+                                </Link>
+                            </Typography>  
+                        </div> 
+                                              
+                        <Typography color='secondary' style={{paddingBottom: '8px'}}>
+                            The todo app allows users to check their task lists based on the task state including todo, in progress and done. 
+                            Also, users can add new tasks and edit tasks according to their progress!
+                        </Typography>
+                        <div className='project-item-tech-stack'>
+                            <Typography style={{fontWeight: '800', paddingRight: '16px'}}>Tech Stack: </Typography>
+                            {[ 'TypeScript', 'React', 'Redux', 'Styled-Component', 'react-router' ].map( tech => {
+                                return <Chip label={tech} color='primary' key={tech} className='project-item-tech-stack-item' />
+                            })}
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <Hidden xsDown>
+                    <Divider variant='inset'/>
+                </Hidden>
+
+                <Hidden smUp>
+                    <Divider />
+                </Hidden>
+
+                <div className='project-item'>
+                    <div className='project-item-icon'>
+                        <FastfoodIcon fontSize='large' style={{ color: '#fcbf49'}} />
                     </div>
                     <div className='project-images-title-container'>
                         <Typography color='primary' variant='h6' style={{fontWeight: '800', paddingBottom: '8px'}}>2020.06-2020.09</Typography> 
@@ -63,7 +105,7 @@ const Projects = () => {
 
                 <div className='project-item'>
                     <div className='project-item-icon'>
-                        <SupervisorAccountIcon color='primary' fontSize='large'  />
+                        <SupervisorAccountIcon fontSize='large' style={{color: '#dee2ff'}}  />
                     </div>
                     <div className='project-images-title-container'>
                         <Typography color='primary' variant='h6' style={{fontWeight: '800', paddingBottom: '8px'}}>2020.01-2020.02</Typography> 
@@ -105,7 +147,7 @@ const Projects = () => {
 
                 <div className='project-item'>
                     <div className='project-item-icon'>
-                        <DirectionsBusIcon color='primary' fontSize='large'  />
+                        <DirectionsBusIcon color='primary' fontSize='large' style={{color: '#6a994e'}}  />
                     </div>
                     <div className='project-item-title'>
                         <Typography color='primary' variant='h6' style={{fontWeight: '800', paddingBottom: '8px'}}>2019.01-2020.05</Typography>  
