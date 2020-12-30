@@ -5,7 +5,7 @@ import './HeaderBar.css';
 import { Link } from 'react-scroll';
 import Home from '../Home/Home';
 import About from '../About/About';
-import Education from '../Education/Education';
+import Experience from '../Experience/Experience';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
 import Contact from '../Contact/Contact';
@@ -29,7 +29,7 @@ const ElevationScroll = props => {
 const HeaderLinks = props => {
     return (
         <ul className={props.linksContainer}>
-            {['Home', 'About', 'Education', 'Projects', 'Skills', 'Contact'].map( ele => {
+            {['Home', 'About', 'Experience', 'Projects', 'Skills', 'Contact'].map( ele => {
                 return (
                     <li className={props.linkItem} key={ ele }>
                         <Link activeClass='active' to={`#${ele.toLowerCase()}`} spy={true} smooth={true} duration={500}  onClick={props.clicked}>
@@ -85,8 +85,8 @@ const HeaderBar = () => {
                 <About />
             </div>
 
-            <div id='#education'>
-                <Education />
+            <div id='#experience'>
+                <Experience />
             </div>
 
             <div id='#projects'>

@@ -1,11 +1,13 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid'; 
+import BurgerProjectImgs from './BurgerProjectImgs/BurgerProjectImgs';
 import { Divider, Typography, Chip, Link, Hidden } from '@material-ui/core';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
 import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
+
 import './Projects.css';
  
 const Projects = () => {
