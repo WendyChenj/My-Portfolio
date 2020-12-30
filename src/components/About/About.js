@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentGrid from '../Layout/ContentGrid';
 import ContactButton from '../Layout/ContactButton';
-import { Grid, Typography, Container, List, ListItemText, Hidden, Button } from '@material-ui/core';
+import { Grid, Typography, Container, List, ListItemText, Hidden, Button, Divider } from '@material-ui/core';
 import self from '../../assets/images/self/self.JPG';
 import selfSmall from '../../assets/images/self/self-small.png';
 import resume from '../../assets/files/Wendy_Chen_resume.pdf';
@@ -40,6 +40,8 @@ const About = () => {
                    and stay in tune with the latest technologies :)
                 </Typography>
             </div>
+
+            <Divider />
         </div>
         // <ContentGrid id='about'>
         //     <Hidden smDown={ true }>

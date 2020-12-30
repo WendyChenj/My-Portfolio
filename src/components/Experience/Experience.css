@@ -1,4 +1,4 @@
-.edu-item {
+/* .edu-item {
     padding: 32px 64px;
     display: flex;
     flex-flow: row nowrap;
@@ -34,6 +34,16 @@
     .edu-item-icon {
         padding: 0 0 8px 0;
     }
+} */
+
+.timeline-content-right {
+  text-align: right;
 }
 
+.timeline-content-left {
+  text-align: left;
+}
 
+.location-name {
+  padding-bottom: 8px;
+}

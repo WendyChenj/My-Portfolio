@@ -107,13 +107,14 @@
 }
 
 .about-me-intro {
-  padding: 16px;
+  padding: 32px;
   display: flex;
   justify-content: center;
 }
 
 .about-me-intro h6 {
   width: 800px;
+  margin-bottom: 32px;
 }
 
 .button-groups {

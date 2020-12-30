@@ -1,17 +1,19 @@
 import React from 'react';
-
 import { SectionWrapper } from "../utilities/SectionWrapper";
-import EducationTimeline from "./EducationTimeline";
+import ExperienceTimeline from "./ExperienceTimeline";
 import ContentGrid from '../Layout/ContentGrid';
 import { Divider, Typography, Hidden } from '@material-ui/core';
 import SchoolIcon from '@material-ui/icons/School';
-import './Education.css';
+import './Experience.css';
 
-const Education = () => {
+const Experience = () => {
     
     return (
         <SectionWrapper title="Professional Experience" subtitle="WORK EXPERIENCE AND RELEVANT ACADEMIC ACCOMPLISHMENTS">
-            <EducationTimeline />
+            <div className="experience-timeline">
+                <ExperienceTimeline />
+            </div>
+            
         </SectionWrapper>
         // <ContentGrid>
         //     <div className='main-container'> 
@@ -83,4 +85,4 @@ const Education = () => {
     );
 }
 
-export default Education;
+export default Experience;
