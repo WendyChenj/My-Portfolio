@@ -1,137 +1,133 @@
 .contact-main-container {
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    overflow: scroll;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  overflow: auto;
 }
 
 .contact-container {
-    padding-top: 128px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+  padding-top: 112px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .contact-title {
-    padding: 32px 16px;
+  padding: 32px 16px;
 }
 
 .contact-content {
-    margin: 96px 32px;
+  bottom: 200px;
+  margin: 96px 32px;
 }
 
 .contact-content-text {
-    text-align: center;
-    margin-bottom: 32px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .contact-end {
-    padding: 32px;
-    background-color: #f1d5f6;
-    height: 450px;
+  padding: 32px;
+  background-color: #f1d5f6;
+  height: 350px;
 }
 
 .contact-end-container {
-    padding-top:  32px;
-    display: flex;
-    flex-flow: row nowrap;
+  padding-top: 16px;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .contact-link-container {
-    display: flex;
-    flex-flow: column nowrap;
-    height: 280px;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 200px;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .contact-link-subcontainer {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    padding:8px 0 8px 48px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  padding: 8px 0 8px 48px;
 }
 
 .contact-link-info {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 .contact-link-title {
-    display: flex;
-    flex-flow: column nowrap;
-    padding-left: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 16px;
 }
 
 .contact-button {
-    margin-left:64px;
-    width: 200px;
-    font-weight: 600;
+  margin-left: 64px;
+  width: 200px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 960px) {
-    .contact-content {
-        margin: 64px 0px;
-    }
+  .contact-content {
+    margin: 64px 0px;
+  }
 
-    .contact-end{
-        padding: 0 16px;
-        padding-bottom: 16px;
-    }
+  .contact-end {
+    padding: 0 16px;
+    padding-bottom: 16px;
+  }
 }
 
 @media screen and (max-width: 720px) {
+  .contact-end {
+    padding: 0 8px;
+    padding-bottom: 16px;
+  }
 
-    .contact-end{
-        padding: 0 8px;
-        padding-bottom: 16px;
-    }
-
-    .contact-link-subcontainer {
-        padding-left: 0px;
-    }
+  .contact-link-subcontainer {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .contact-end-container {
-        padding: 32px 16px 16px;
-    }
+  .contact-end-container {
+    padding: 32px 16px 16px;
+  }
 
-    .contact-container {
-        padding-top: 112px;
-    }
+  .contact-container {
+    padding-top: 112px;
+  }
 
-    .contact-end {
-        height: 220px;
-    }
+  .contact-end {
+    height: 220px;
+  }
 
-    .contact-link-info {
-        padding-left: 0px;
-    }
+  .contact-link-info {
+    padding-left: 0px;
+  }
 
-    .contact-content {
-        margin: 32px 0;
-    }
+  .contact-content {
+    margin: 32px 0;
+  }
 
-    .contact-content-text {
-        text-align: left;
-    }
+  .contact-content-text {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .contact-title {
-        text-align: center;
-        padding-top: 0px;
-    }
+  .contact-title {
+    text-align: center;
+    padding-top: 0px;
+  }
 }
-
 
 .contact-content-extra-small {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-    padding-top: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  padding-top: 16px;
 }
-
-
-
