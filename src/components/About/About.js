@@ -41,7 +41,7 @@ const About = () => {
                 </Typography>
             </div>
 
-            <Divider />
+            <Divider style={{marginTop: "32px"}} />
         </div>
         // <ContentGrid id='about'>
         //     <Hidden smDown={ true }>

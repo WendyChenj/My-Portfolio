@@ -107,7 +107,7 @@
 }
 
 .about-me-intro {
-  padding: 32px;
+  padding-top: 32px;
   display: flex;
   justify-content: center;
 }
@@ -118,5 +118,9 @@
 }
 
 .button-groups {
+  margin-top: 32px;
+}
+
+.divider-top {
   margin-top: 32px;
 }

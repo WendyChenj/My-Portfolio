@@ -2,7 +2,7 @@ import React from 'react';
 import { SectionWrapper } from "../utilities/SectionWrapper";
 import ExperienceTimeline from "./ExperienceTimeline";
 import ContentGrid from '../Layout/ContentGrid';
-import { Divider, Typography, Hidden } from '@material-ui/core';
+import { Divider } from '@material-ui/core';
 import SchoolIcon from '@material-ui/icons/School';
 import './Experience.css';
 
@@ -14,6 +14,7 @@ const Experience = () => {
                 <ExperienceTimeline />
             </div>
             
+            <Divider style={{marginTop: "32px"}} />
         </SectionWrapper>
         // <ContentGrid>
         //     <div className='main-container'> 

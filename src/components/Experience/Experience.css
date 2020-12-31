@@ -36,6 +36,10 @@
     }
 } */
 
+.experience-timeline {
+  margin: 0 64px;
+}
+
 .timeline-content-right {
   text-align: right;
 }

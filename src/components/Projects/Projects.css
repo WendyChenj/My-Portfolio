@@ -1,96 +1,134 @@
-.project-item {
-    padding: 32px 64px;
-    display: flex;
-    flex-flow: row nowrap;
+/* .project-item {
+  padding: 32px 64px;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .project-item-icon {
-    padding: 0 48px 0 16px;
+  padding: 0 48px 0 16px;
 }
 
 .project-item-link {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 
 .project-item-tech-stack {
-    padding-right: 16px;
-    padding-bottom: 24px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+  padding-right: 16px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .project-item-tech-stack-item {
-    margin-right: 8px;
-    margin-bottom: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .project-images-title-container {
-    width: calc(100% - 100px);
+  width: calc(100% - 100px);
 }
 
 .project-images-container {
-    margin-top: 8px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    overflow: hidden;
-    width: 100%;
+  margin-top: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
 }
 
 .project-images-gridlist {
-    width: 350px;
-    height: 400px;
+  width: 350px;
+  height: 400px;
 }
 
 .project-image {
-    width: 320px;
-    height: 400px;
+  width: 320px;
+  height: 400px;
 }
 
 @media screen and (max-width: 960px) {
-    .project-item {
-        padding: 32px 0px;
-    }
+  .project-item {
+    padding: 32px 0px;
+  }
 
-    .project-item-icon {
-        padding-left: 0px;
-    }
+  .project-item-icon {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .project-item {
-        display: flex;
-        flex-flow: column nowrap;
-        text-align: left;
-    }
+  .project-item {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+  }
 
-    .project-images-title-container {
-        width: calc(100% - 16px);
-        text-align: left;
-    }
+  .project-images-title-container {
+    width: calc(100% - 16px);
+    text-align: left;
+  }
 
-    .project-item-icon {
-        padding: 0 0 8px 0;
-    }
+  .project-item-icon {
+    padding: 0 0 8px 0;
+  }
 
-    .project-item-link {
-        justify-content: flex-start;
-    }
+  .project-item-link {
+    justify-content: flex-start;
+  }
 
-    .project-images-gridlist {
-        width: 220px;
-        height: 250px;
-    }
+  .project-images-gridlist {
+    width: 220px;
+    height: 250px;
+  }
 
-    .dashboard-image {
-        width: 250px;
-        height: 200px;
-    }
+  .dashboard-image {
+    width: 250px;
+    height: 200px;
+  }
 
-    .project-item-tech-stack {
-        justify-content: left;
-    }
+  .project-item-tech-stack {
+    justify-content: left;
+  }
+} */
+
+.project-card-container {
+  width: 1000px;
+  margin-left: calc((100% - 1000px) / 2);
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.card-content-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+.card-tech-stack {
+  margin-top: 6px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.card-tech-stack-item {
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.card-project-intro {
+  margin-top: 8px;
+}
+
+.card-button-groups {
+  margin-top: 6px;
 }

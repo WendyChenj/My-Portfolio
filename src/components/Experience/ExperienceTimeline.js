@@ -10,7 +10,7 @@ const ExperienceTimeline = () => {
     <Timeline align="alternate">
       <TimelineItem style={{minHeight: "100px", padding: "8px 0 8px 0"}}>
         <TimelineSeparator>
-          <TimelineDot>
+          <TimelineDot color="primary" variant="outlined">
             <BusinessIcon fontSize="large" />
           </TimelineDot>
           <TimelineConnector />
@@ -25,9 +25,10 @@ const ExperienceTimeline = () => {
           <Typography className="location-name" style={{ color: "grey"}}>
             KataniTech Inc, Ottawa, ON
           </Typography>           
-          <Typography> • Volunteering of a humanitarian project to support over 2407 local businesses across Canada by sharing “pop-up” deals both in-store and online <br />
-• Maintaining, optimizing, troubleshooting, and improving the performance of the website and mobile applications <br />
-• Working closely with other team members on the development team</Typography>
+          <Typography> 
+            • Volunteering of a humanitarian project to support over 2407 local businesses across Canada by sharing “pop-up” deals both in-store and online <br />
+            • Maintaining, optimizing, troubleshooting, and improving the performance of the website and mobile applications <br />
+            • Working closely with other team members on the development team</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem style={{minHeight: "100px", padding: "8px -32px 8px 0"}}>
@@ -77,7 +78,7 @@ const ExperienceTimeline = () => {
       </TimelineItem>
       <TimelineItem style={{minHeight: "100px"}}>
         <TimelineSeparator>
-          <TimelineDot color="secondary">
+          <TimelineDot>
             <SchoolIcon fontSize="large" />
           </TimelineDot>
         </TimelineSeparator>
@@ -93,6 +94,9 @@ const ExperienceTimeline = () => {
           </Typography>           
           <Typography>
             GPA: 3.32 / 4.0
+          </Typography>
+          <Typography>
+            Related Courses: C++ Programming; Microcomputer Principle and Application
           </Typography>
         </TimelineContent>
       </TimelineItem>
