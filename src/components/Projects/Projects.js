@@ -59,8 +59,9 @@ const Projects = () => {
                   techStack={["React", "HTML", "CSS", "RegExp", "CSS Grid"]}
                   intro="The calculator utilizes immediate logic and output calculation result.
                          Any operation (+-*/) and the decimal (.) element are able to work. If 2 or more operators are entered consecutively, 
-                         the operation performed should be the last operator entered (excluding the negative (-) sign). 
-                  "
+                         the operation performed should be the last operator entered (excluding the negative (-) sign). "
+                  simpleIntro="The calculator utilizes immediate logic and output calculation result.
+                         It would be able to perform any operations, and recognize decimals and negative sign."
                   websiteLink="https://wendychenj.github.io/javascript-calculator/"
                   githubLink="https://github.com/WendyChenj/Admin-Dashboard"
                 />
@@ -74,6 +75,8 @@ const Projects = () => {
                          When a session/ break countdown reaches to zero, a sound will be played indicating that time is up.
                          Click the reset button, the session/ break length and timer will be set to the initialized state. 
                          The sound will stop playing and be rewound to the beginning."
+                  simpleIntro="Click the start button makes the timer running and the timer can be stopped or resumed counting at any time.
+                               A sound will be played indicating time is up when a session/ break countdown reaches 0."
                   websiteLink="https://wendychenj.github.io/javascript-clock/"
                   githubLink="https://github.com/WendyChenj/javascript-clock"
                 />
@@ -84,7 +87,9 @@ const Projects = () => {
                   projectName="Task Management Application"
                   techStack={["TypeScript", "React", "Redux", "styled-components", "react-router"]}
                   intro="The todo app allows users to check their task lists based on the task state including todo, in progress and done. 
-                  Also, users can add new tasks and edit tasks according to their progress!"
+                         Also, users can add new tasks and edit tasks according to their progress!"
+                  simpleIntro="There are three task status including todo, in progress and done. 
+                              New task can be added and existing tasks can be edited and moved to another status group."
                   websiteLink="https://gifted-ptolemy-72f282.netlify.app/todo"
                   githubLink="https://github.com/WendyChenj/react-typescript"
                 />
@@ -97,6 +102,8 @@ const Projects = () => {
                   intro="This system can monitor real-time sensor activities, store and process real-time data in database 
                          and alert warnings when abnormal data occurs. By cooperating with mechanical techinians in STO company and other colleagues from my lab, 
                          we successfully built a front-end interface to display bus conditions and notify warnings, and a back-end management system to analyze data and catch execeptions."
+                  simpleIntro="By working closely with technical experts in STO company and other team members from my lab, we successfully built a predictive maintenance system including 
+                         frontend and backend and achieved 100% correctness detecting abnormal data."
                   githubDisabled = {true}
                   buttonName= "see my thesis"
                   websiteLink="https://gifted-ptolemy-72f282.netlify.app/todo"
