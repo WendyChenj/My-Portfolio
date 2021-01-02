@@ -81,8 +81,7 @@ const Contact = () => {
                         </Hidden>
 
                         <Hidden smUp>
-                            <div className='contact-content-extra-small'>
-                                <Grid container>
+                                <Grid container className="contact-end-subcontainer-small">
                                     <Grid item xs={3} style={{textAlign: 'center', height: '80px'}}>
                                         <Link href='https://www.linkedin.com/in/wenjie-wendy-chen/' target='_blank' rel='noopener'>
                                             <LinkedInIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
@@ -113,7 +112,6 @@ const Contact = () => {
                                                 DOWNLOAD MY CV
                                     </Button>
                                 </div>
-                            </div>
                         </Hidden>
                     </div>
             </div>

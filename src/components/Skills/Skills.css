@@ -23,7 +23,7 @@
   }
 
   .skills-items-container {
-    margin: 32px;
+    margin: 0 8px;
   }
 
   .each-skill-container {
@@ -33,6 +33,6 @@
 
 @media screen and (max-width: 600px) {
   .each-skill-container {
-    padding: 16px 32px 16px 16px;
+    padding: 8px 16px 16px;
   }
 }

@@ -139,3 +139,26 @@
     margin-left: calc((100% - 590px) / 2);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .project-card-container {
+    width: 310px;
+    margin-left: calc((100% - 310px) / 2);
+  }
+
+  .card-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .card-content-container.MuiCardContent-root {
+    padding: 8px;
+  }
+
+  .card-tech-stack {
+    justify-content: center;
+  }
+}

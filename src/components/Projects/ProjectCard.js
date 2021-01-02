@@ -4,11 +4,25 @@ import { Card, CardContent, CardMedia, Typography, Button } from "@material-ui/c
 import EditIcon from '@material-ui/icons/Edit';
 
 const ProjectCard = props => {
+
+  const TechStack = (
+    <div className='card-tech-stack'>
+      <EditIcon 
+        fontSize="small" 
+        color="primary" 
+        style={{marginRight: "4px"}}
+      />
+      {(props.techStack).map( tech => {
+        return <span style={{marginRight: "4px"}}>{tech};</span>
+      })}
+    </div>
+  );
+
   return (
     <Card className="card-container">
       <CardMedia
         component="img"
-        height="240"
+        height={window.innerWidth > 600? "240": "180"}
         image={props.image}
         title={props.imgTitle}
         style={{ width: "auto", margin: "8px"}}
@@ -17,16 +31,7 @@ const ProjectCard = props => {
         <Typography variant="h6">
           {props.projectName}
         </Typography>
-        <div className='card-tech-stack'>
-          <EditIcon 
-            fontSize="small" 
-            color="primary" 
-            style={{marginRight: "4px"}}
-          />
-          {(props.techStack).map( tech => {
-            return <span style={{marginRight: "4px"}}>{tech};</span>
-          })}
-        </div>
+        
 
         <Typography style={{marginTop: "6px"}}>
           {window.innerWidth > 960 ? props.intro : props.simpleIntro}

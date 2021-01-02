@@ -65,3 +65,9 @@
     text-align: left;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .experience-timeline {
+    margin: 0;
+  }
+}

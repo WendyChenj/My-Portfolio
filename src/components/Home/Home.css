@@ -27,7 +27,7 @@
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, -25%);
-  height: 150px;
+  height: 120px;
 }
 
 .arrow-down-icon {
@@ -52,7 +52,7 @@
 
 @media screen and (max-height: 600px) {
   .home-arrow-container {
-    height: 80px;
+    height: 60px;
   }
 }
 

@@ -16,6 +16,12 @@ import calculatorImg from "../../assets/images/allProject/calculator.png";
 import timerImg from "../../assets/images/allProject/countdown-timer.png";
 import todoImg from "../../assets/images/allProject/todo-app.png";
 import busImg from "../../assets/images/allProject/bus.png";
+
+import smallBurgerImg from "../../assets/images/allProject/small-burger.png";
+import smallDashboardImg from "../../assets/images/allProject/small-admin.png";
+import smallCalcImg from "../../assets/images/allProject/small-calculator.png";
+import smallTimerImg from "../../assets/images/allProject/small-timer.png";
+import smallTodoImg from "../../assets/images/allProject/small-todo.png";
 import './Projects.css';
  
 const Projects = () => {
@@ -24,7 +30,7 @@ const Projects = () => {
         <SectionWrapper title="Fun Projects" subtitle="FIND MY REAL DEVELOPMENT APPLICATIONS">
             <div className="project-card-container">
                 <ProjectCard 
-                  image={burgerImage} 
+                  image={window.innerWidth > 600 ? burgerImage: smallBurgerImg} 
                   imgTitle="Burger Order Platform" 
                   projectName="Burger Builder E-commerce Application"
                   techStack={["React", "Redux", "Material-UI", "react-router", "axios", "Firebase"]}
@@ -38,7 +44,7 @@ const Projects = () => {
                 />
 
                 <ProjectCard 
-                  image={dashboardImage} 
+                  image={window.innerWidth > 600 ? dashboardImage: smallDashboardImg} 
                   imgTitle="Admin Dashboard" 
                   projectName="Admin Dashboard"
                   techStack={["React", "Redux", "D3.js", "Material-UI", "react-router"]}
@@ -53,7 +59,7 @@ const Projects = () => {
                 />
 
                 <ProjectCard 
-                  image={calculatorImg} 
+                  image={window.innerWidth > 600 ? calculatorImg: smallCalcImg} 
                   imgTitle="JavaScript Calculator" 
                   projectName="JavaScript Calculator"
                   techStack={["React", "HTML", "CSS", "RegExp", "CSS Grid"]}
@@ -67,7 +73,7 @@ const Projects = () => {
                 />
 
                 <ProjectCard 
-                  image={timerImg} 
+                  image={window.innerWidth > 600 ? timerImg: smallTimerImg} 
                   imgTitle="Countdown Timer" 
                   projectName="Countdown Timer"
                   techStack={["React", "HTML", "CSS"]}
@@ -82,7 +88,7 @@ const Projects = () => {
                 />
 
                 <ProjectCard 
-                  image={todoImg} 
+                  image={window.innerWidth > 600 ? todoImg: smallTodoImg} 
                   imgTitle="Task Management Application" 
                   projectName="Task Management Application"
                   techStack={["TypeScript", "React", "Redux", "styled-components", "react-router"]}
@@ -90,7 +96,7 @@ const Projects = () => {
                          Also, users can add new tasks and edit tasks according to their progress!"
                   simpleIntro="There are three task status including todo, in progress and done. 
                               New task can be added and existing tasks can be edited and moved to another status group."
-                  websiteLink="https://gifted-ptolemy-72f282.netlify.app/todo"
+                  websiteLink="https://gifted-ptolemy-72f282.netlify.app"
                   githubLink="https://github.com/WendyChenj/react-typescript"
                 />
 
