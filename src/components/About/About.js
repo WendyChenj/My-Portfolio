@@ -8,7 +8,7 @@ import resume from '../../assets/files/Wendy_Chen_resume.pdf';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
-import { IconLink } from '../utilities/IconLink';
+import { IconLink } from '../utilities/Links';
 import './About.css';
 import '../Layout/GlobalCss.css';
 

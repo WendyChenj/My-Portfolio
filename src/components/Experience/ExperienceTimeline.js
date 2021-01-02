@@ -1,4 +1,5 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from "@material-ui/core";
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from '@material-ui/lab';
 import BusinessIcon from '@material-ui/icons/Business';
@@ -7,8 +8,8 @@ import "./Experience.css";
 
 const ExperienceTimeline = () => {
   return (
-    <Timeline align="alternate">
-      <TimelineItem style={{minHeight: "100px", padding: "8px 0 8px 0"}}>
+    <Timeline align={window.innerWidth > 960 ? "alternate" : "left"}>
+      <TimelineItem style={{minHeight: "100px", padding: "8px 0 8px 0"}} className="TimelineItem">
         <TimelineSeparator>
           <TimelineDot color="primary" variant="outlined">
             <BusinessIcon fontSize="large" />
@@ -22,7 +23,7 @@ const ExperienceTimeline = () => {
           <Typography variant="h6">
             Software Developer
           </Typography>
-          <Typography className="location-name" style={{ color: "grey"}}>
+          <Typography className="location-name" color="secondary">
             KataniTech Inc, Ottawa, ON
           </Typography>           
           <Typography> 
@@ -31,7 +32,7 @@ const ExperienceTimeline = () => {
             • Working closely with other team members on the development team</Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem style={{minHeight: "100px", padding: "8px -32px 8px 0"}}>
+      <TimelineItem style={{minHeight: "100px", padding: "8px -32px 8px 0"}} className="TimelineItem">
         <TimelineSeparator>
           <TimelineDot color="primary">
             <SchoolIcon fontSize="large" />
@@ -45,14 +46,17 @@ const ExperienceTimeline = () => {
           <Typography variant="h6">
             Master of Science of Systems Science
           </Typography>
-          <Typography className="location-name" style={{ color: "grey"}}>
+          <Typography className="location-name" color="secondary">
             University of Ottawa, Ottawa, ON
           </Typography>           
           <Typography>GPA: 9.6 / 10</Typography>
-          <Typography>Related Courses: Modelling and Simulation (A+); Systems Engineering (A+); System Optimization and Management (A+); Applied Probability (A+); Advanced Database System (A); Data Structures and Algorithms</Typography>
+          <Typography>
+            Related Courses: Modelling and Simulation (A+); Systems Engineering (A+); System Optimization and Management (A+); 
+            Applied Probability (A+); Advanced Database System (A); Data Structures and Algorithms
+          </Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem style={{minHeight: "100px"}}>
+      <TimelineItem style={{minHeight: "100px"}} className="TimelineItem">
         <TimelineSeparator>
           <TimelineDot color="primary" variant="outlined">
             <SchoolIcon fontSize="large" />
@@ -66,7 +70,7 @@ const ExperienceTimeline = () => {
           <Typography variant="h6">
             React - The Complete Guide (Hooks, React Router, Redux)
           </Typography>
-          <Typography className="location-name" style={{ color: "grey"}}>
+          <Typography className="location-name" color="secondary">
             Udemy Course taught by Maximilian Schwarzmüller
           </Typography>           
           <Typography>
@@ -76,9 +80,9 @@ const ExperienceTimeline = () => {
           </Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem style={{minHeight: "100px"}}>
+      <TimelineItem style={{minHeight: "100px"}} className="TimelineItem">
         <TimelineSeparator>
-          <TimelineDot>
+          <TimelineDot color="primary">
             <SchoolIcon fontSize="large" />
           </TimelineDot>
         </TimelineSeparator>
@@ -89,7 +93,7 @@ const ExperienceTimeline = () => {
           <Typography variant="h6">
             Bachelor of Engineering
           </Typography>
-          <Typography className="location-name" style={{ color: "grey"}}>
+          <Typography className="location-name" color="secondary">
             University of Science and Technology, Beijing, China
           </Typography>           
           <Typography>

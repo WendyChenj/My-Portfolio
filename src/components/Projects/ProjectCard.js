@@ -29,7 +29,7 @@ const ProjectCard = props => {
         </div>
 
         <Typography style={{marginTop: "6px"}}>
-          {props.intro}
+          {window.innerWidth > 960 ? props.intro : props.simpleIntro}
         </Typography>
 
         <div className="card-button-groups">
@@ -40,16 +40,16 @@ const ProjectCard = props => {
             target="_blank"
             disabled={props.disabled}
           >
-            See It Live
+            {props.buttonName ? props.buttonName: "see it live"}
           </Button>
 
           <Button 
             variant="outlined" 
-            color="primary" 
-            style={{marginLeft: "64px"}} 
+            color={props.githubDisabled ? "secondary": "primary"}
+            style={{marginLeft: "24px"}} 
             href={props.githubLink} 
             target="_blank"
-            disabled={props.disabled}
+            disabled={props.githubDisabled}
           >
             Github
           </Button>

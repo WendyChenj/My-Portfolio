@@ -12,6 +12,10 @@ import ProjectCard from "./ProjectCard";
 
 import burgerImage from "../../assets/images/allProject/burger-order-homepage.png";
 import dashboardImage from "../../assets/images/allProject/admin-homepage.png";
+import calculatorImg from "../../assets/images/allProject/calculator.png";
+import timerImg from "../../assets/images/allProject/countdown-timer.png";
+import todoImg from "../../assets/images/allProject/todo-app.png";
+import busImg from "../../assets/images/allProject/bus.png";
 import './Projects.css';
  
 const Projects = () => {
@@ -27,6 +31,8 @@ const Projects = () => {
                   intro="The application allows customers to create their own burger by adding or removing ingredients based on their own flavour. 
                          The customer information and order data are stored in the database. 
                          Users are required to log in to place an order or check their history orders."
+                  simpleIntro="Customers are required to log in to create their own burger by adding or removing ingredients, place an order and check their history orders.
+                         The customer information and order data are stored in the database. "
                   websiteLink="https://react-my-burger-1f18b.web.app/"
                   githubLink="https://github.com/WendyChenj/My-Burger-Builder"
                 />
@@ -40,10 +46,64 @@ const Projects = () => {
                          Users also could add new tasks and delete tasks that have been done. 
                          Moreover, there is a monthly timeline to remind users big event and the date when big event happens. 
                          Users could edit the date and event according to their own schedule."
+                  simpleIntro="By visualizing sales data, users are able to check sales performance and track their task progress. 
+                         The monthly schedule and timeline remind users the date when big event occurs."
                   websiteLink="https://nostalgic-brattain-51149d.netlify.app/"
                   githubLink="https://github.com/WendyChenj/Admin-Dashboard"
                 />
+
+                <ProjectCard 
+                  image={calculatorImg} 
+                  imgTitle="JavaScript Calculator" 
+                  projectName="JavaScript Calculator"
+                  techStack={["React", "HTML", "CSS", "RegExp", "CSS Grid"]}
+                  intro="The calculator utilizes immediate logic and output calculation result.
+                         Any operation (+-*/) and the decimal (.) element are able to work. If 2 or more operators are entered consecutively, 
+                         the operation performed should be the last operator entered (excluding the negative (-) sign). 
+                  "
+                  websiteLink="https://wendychenj.github.io/javascript-calculator/"
+                  githubLink="https://github.com/WendyChenj/Admin-Dashboard"
+                />
+
+                <ProjectCard 
+                  image={timerImg} 
+                  imgTitle="Countdown Timer" 
+                  projectName="Countdown Timer"
+                  techStack={["React", "HTML", "CSS"]}
+                  intro="Click the start button will make the timer running. And the timer can be stopped or resumed counting at any time.
+                         When a session/ break countdown reaches to zero, a sound will be played indicating that time is up.
+                         Click the reset button, the session/ break length and timer will be set to the initialized state. 
+                         The sound will stop playing and be rewound to the beginning."
+                  websiteLink="https://wendychenj.github.io/javascript-clock/"
+                  githubLink="https://github.com/WendyChenj/javascript-clock"
+                />
+
+                <ProjectCard 
+                  image={todoImg} 
+                  imgTitle="Task Management Application" 
+                  projectName="Task Management Application"
+                  techStack={["TypeScript", "React", "Redux", "styled-components", "react-router"]}
+                  intro="The todo app allows users to check their task lists based on the task state including todo, in progress and done. 
+                  Also, users can add new tasks and edit tasks according to their progress!"
+                  websiteLink="https://gifted-ptolemy-72f282.netlify.app/todo"
+                  githubLink="https://github.com/WendyChenj/react-typescript"
+                />
+
+                <ProjectCard 
+                  image={busImg} 
+                  imgTitle="Bus" 
+                  projectName="A Predictive Maintenance System for A Hybrid Bus (Master's Thesis)"
+                  techStack={['Python', 'Flask', 'Flask-SqlAlchemy', 'MySQL', 'JavaScript', 'HTML', 'CSS', 'Restful API', 'IoT', 'Expert System']}
+                  intro="This system can monitor real-time sensor activities, store and process real-time data in database 
+                         and alert warnings when abnormal data occurs. By cooperating with mechanical techinians in STO company and other colleagues from my lab, 
+                         we successfully built a front-end interface to display bus conditions and notify warnings, and a back-end management system to analyze data and catch execeptions."
+                  githubDisabled = {true}
+                  buttonName= "see my thesis"
+                  websiteLink="https://gifted-ptolemy-72f282.netlify.app/todo"
+                />
             </div>
+
+            <Divider style={{marginTop: "32px"}} />
             
         </SectionWrapper>
         // <ContentGrid>

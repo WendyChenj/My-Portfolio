@@ -1,5 +1,6 @@
 import React from 'react';
-import ContentGrid from '../Layout/ContentGrid';
+import { SectionWrapper } from "../utilities/SectionWrapper";
+import { ContactLink } from "../utilities/Links";
 import ContactButton from '../Layout/ContactButton';
 import { Typography, Grid, Link, Hidden, Button }  from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -9,60 +10,39 @@ import CallIcon from '@material-ui/icons/Call';
 import resume from '../../assets/files/Wendy_Chen_resume.pdf';
 import './Contact.css';
 
-const ContactLink = props => {
-    return (
-        <div className='contact-link-subcontainer'>
-            {props.children}
-            <div className='contact-link-title'>
-                <Typography style={{fontWeight: '600'}}>
-                    {props.title}
-                </Typography>
-                <Typography color='secondary'>
-                    {props.intro}
-                </Typography>
-            </div>                                
-        </div>
-    );
-}
-
 const Contact = () => {
 
     return ( 
-        <div className='contact-main-container'>
-            <ContentGrid>
-                <div className='main-container contact-container'>
-                    <Typography variant='h4' color='primary' style={{fontWeight: '900', color: 'black'}} className='contact-title'>
-                        Let's get in touch!
-                    </Typography>
-
-                    <div className='contact-content'>
-                        <Typography variant='h6' color='secondary' className='contact-content-text' style={{marginBottom: '32px'}}>
-                            I'm always looking for inspirational projects for which I can help find solutions and create beautiful and powerful websites. 
-                            So if you are interested on my skillsets and aptitudes and have amazing projects on hands, please consider me for your team and 
-                            send me message with your information! I will get back to you as soon as possible!
-                        </Typography>
-                    </div>
-                </div>
-            </ContentGrid>
+        <SectionWrapper title="Let's get contact!" subtitle="PLEASE REACH OUT IF I AM A GOOD FIT">
+            <div className='contact-content'>
+                <Typography variant='h6' color='secondary' className="contact-content-text">
+                    I'm always looking for inspirational projects for which I can help find solutions and create beautiful and powerful websites. 
+                    So if you are interested on my skillsets and aptitudes and have amazing projects on hands, please consider me for your team and 
+                    send me message with your information! I will get back to you as soon as possible!
+                </Typography>
+            </div>
             
             <div className='contact-end'>
-                <ContentGrid>
-                    <div className='contact-end-container'>
-                        <Hidden xsDown>
-                            <Grid container>
-                                <Grid item md={6} sm={6} style={{display: 'flex', flexFlow: 'row nowrap', justifyContent: 'center'}}>
-                                    <div className='contact-link-container'>
-                                        <ContactLink title='Linkedin' intro='Connect with me on Linkedin'>
-                                            <Link href='https://www.linkedin.com/in/wenjie-wendy-chen/' target='_blank' rel='noopener'>
-                                                <LinkedInIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
-                                         </Link>
-                                        </ContactLink>
+                <div className='contact-end-container'>
+                    <Hidden xsDown>
+                        <Grid container>
+                            <Grid item md={6} sm={6} style={{display: 'flex', flexFlow: 'row nowrap', justifyContent: 'center'}}>
+                                <div className='contact-link-container'>
+                                    <ContactLink 
+                                      href="https://www.linkedin.com/in/wenjie-wendy-chen/"
+                                      title='Linkedin' 
+                                      intro='Connect with me on Linkedin' 
+                                    >
+                                      <LinkedInIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
+                                    </ContactLink>
 
-                                     <ContactLink title='Github: WendyChenj' intro='Review my codes of my projects'>
-                                            <Link href='https://github.com/WendyChenj' target='_blank' rel='noopener'>
-                                                <GitHubIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
-                                         </Link>
-                                     </ContactLink>
+                                     <ContactLink 
+                                      href="https://github.com/WendyChenj"
+                                      title='Github: WendyChenj' 
+                                      intro='Review my codes of my projects'
+                                    >
+                                      <GitHubIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
+                                    </ContactLink>
 
                                         <div style={window.innerWidth > 720 ? null: {marginLeft: '-48px'}}>
                                             <Button variant='contained' color='primary' href={resume} 
@@ -75,15 +55,19 @@ const Contact = () => {
                                 </Grid>
                                 <Grid item md={6} sm={6} style={{display: 'flex', flexFlow: 'row nowrap', justifyContent: 'center'}}>
                                     <div className='contact-link-container'>
-                                        <ContactLink title='Email' intro='wendychen9395@gmail.com'>
-                                            <Link href='mailto:wendychen9395@gmail.com' target='_blank' rel='noopener'>
-                                                <EmailIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
-                                            </Link>
+                                        <ContactLink 
+                                          href='mailto:wendychen9395@gmail.com'
+                                          title='Email' 
+                                          intro='wendychen9395@gmail.com'
+                                        >
+                                          <EmailIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
                                         </ContactLink>
-                                        <ContactLink title='Cell Phone' intro='(343)-988-8540'>
-                                            <Link href='tel: 3439888540' target='_blank' rel='noopener'>
-                                                <CallIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
-                                            </Link>
+                                        <ContactLink 
+                                          href='tel: 3439888540' 
+                                          title='Cell Phone' 
+                                          intro='(343)-988-8540'
+                                        >
+                                          <CallIcon fontSize='large' className='contact-link-info' style={{color: 'black'}} />
                                         </ContactLink>
                                     
                                         <div style={window.innerWidth > 720 ? null: {marginLeft: '-48px'}}>
@@ -132,9 +116,8 @@ const Contact = () => {
                             </div>
                         </Hidden>
                     </div>
-                </ContentGrid>
             </div>
-        </div>
+        </SectionWrapper>
     );
 }
 

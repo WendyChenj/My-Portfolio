@@ -96,8 +96,8 @@
 } */
 
 .project-card-container {
-  width: 1000px;
-  margin-left: calc((100% - 1000px) / 2);
+  width: 950px;
+  margin-left: calc((100% - 950px) / 2);
 }
 
 .card-container {
@@ -131,4 +131,11 @@
 
 .card-button-groups {
   margin-top: 6px;
+}
+
+@media screen and (max-width: 960px) {
+  .project-card-container {
+    width: 590px;
+    margin-left: calc((100% - 590px) / 2);
+  }
 }
