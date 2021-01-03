@@ -4,9 +4,11 @@
 }
 
 .section-subtitle {
-  padding-top: 16px;
   letter-spacing: 5px;
-  padding-bottom: 64px;
+}
+
+.section-subtitle.MuiTypography-root {
+  margin: 16px 8px 64px;
 }
 
 .contact-link-subcontainer {

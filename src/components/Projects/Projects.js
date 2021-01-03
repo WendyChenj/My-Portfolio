@@ -1,14 +1,9 @@
 import React from 'react';
-import ContentGrid from '../Layout/ContentGrid'; 
-import { Divider, Typography, Chip, Link, Hidden } from '@material-ui/core';
-import FastfoodIcon from '@material-ui/icons/Fastfood';
-import DirectionsBusIcon from '@material-ui/icons/DirectionsBus';
-import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
-import LinkIcon from '@material-ui/icons/Link';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import { SectionWrapper } from "../utilities/SectionWrapper";
+
 import ProjectCard from "./ProjectCard";
+import { SectionWrapper } from "../utilities/SectionWrapper";
+
+import { Divider } from '@material-ui/core';
 
 import burgerImage from "../../assets/images/allProject/burger-order-homepage.png";
 import dashboardImage from "../../assets/images/allProject/admin-homepage.png";

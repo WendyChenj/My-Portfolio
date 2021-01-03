@@ -5,7 +5,7 @@ import EditIcon from '@material-ui/icons/Edit';
 
 const ProjectCard = props => {
 
-  const TechStack = (
+  const TechStack = () => (
     <div className='card-tech-stack'>
       <EditIcon 
         fontSize="small" 
@@ -13,7 +13,7 @@ const ProjectCard = props => {
         style={{marginRight: "4px"}}
       />
       {(props.techStack).map( tech => {
-        return <span style={{marginRight: "4px"}}>{tech};</span>
+        return <span key={tech} style={{marginRight: "4px"}}>{tech};</span>
       })}
     </div>
   );
@@ -31,7 +31,8 @@ const ProjectCard = props => {
         <Typography variant="h6">
           {props.projectName}
         </Typography>
-        
+
+        {window.innerWidth > 600 ? <TechStack /> : null}
 
         <Typography style={{marginTop: "6px"}}>
           {window.innerWidth > 960 ? props.intro : props.simpleIntro}

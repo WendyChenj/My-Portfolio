@@ -1,7 +1,6 @@
 import React from 'react';
 import { SectionWrapper } from "../utilities/SectionWrapper";
 import ExperienceTimeline from "./ExperienceTimeline";
-import ContentGrid from '../Layout/ContentGrid';
 import { Divider } from '@material-ui/core';
 import './Experience.css';
 
