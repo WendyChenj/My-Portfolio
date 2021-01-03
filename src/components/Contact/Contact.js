@@ -1,7 +1,6 @@
 import React from 'react';
 import { SectionWrapper } from "../utilities/SectionWrapper";
 import { ContactLink } from "../utilities/Links";
-import ContactButton from '../Layout/ContactButton';
 import { Typography, Grid, Link, Hidden, Button }  from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -71,9 +70,11 @@ const Contact = () => {
                                         </ContactLink>
                                     
                                         <div style={window.innerWidth > 720 ? null: {marginLeft: '-48px'}}>
-                                            <ContactButton href='mailto:wendychen9395@gmail.com' target='_blank' rel='noopener' download={false} >
-                                                HIRE ME
-                                            </ContactButton>
+                                            <Button variant='contained' color='primary' href='mailto:wendychen9395@gmail.com' target='_blank' rel='noopener'
+                                               style={{width: '200px', fontWeight: '600', marginLeft: '64px'}} 
+                                               download={false} >
+                                                Hire me
+                                            </Button>
                                         </div>
                                     </div>
                                 </Grid>
