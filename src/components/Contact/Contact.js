@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionWrapper } from "../utilities/SectionWrapper";
 import { ContactLink, IconLink } from "../utilities/Links";
-import { Typography, Grid, Link, Hidden, Button }  from '@material-ui/core';
+import { Typography, Grid, Hidden, Button }  from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
