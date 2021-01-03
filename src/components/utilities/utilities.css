@@ -1,0 +1,25 @@
+.section-wrapper {
+  text-align: center;
+  padding-top: 112px;
+}
+
+.section-subtitle {
+  letter-spacing: 5px;
+}
+
+.section-subtitle.MuiTypography-root {
+  margin: 16px 8px 64px;
+}
+
+.contact-link-subcontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.contact-link-title {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 16px;
+}

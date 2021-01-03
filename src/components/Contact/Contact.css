@@ -1,63 +1,31 @@
-.contact-main-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-}
-
-.contact-container {
-  padding-top: 112px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.contact-title {
-  padding: 32px 16px;
-}
-
 .contact-content {
-  margin: 64px 32px;
-}
-
-.contact-content-text {
-  text-align: center;
-  margin-bottom: 32px;
+  margin: 32px 128px 96px;
 }
 
 .contact-end {
-  padding: 64px 32px;
+  padding: 64px;
   background-color: #f1d5f6;
 }
 
 .contact-end-container {
-  padding-top: 16px;
   display: flex;
   flex-flow: row nowrap;
 }
 
 .contact-link-container {
+  text-align: left;
   display: flex;
   flex-flow: column nowrap;
-  height: 200px;
   justify-content: space-between;
   align-content: center;
-}
-
-.contact-link-subcontainer {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  padding: 8px 0 8px 48px;
 }
 
 .contact-link-info {
   padding-left: 16px;
 }
 
-.contact-link-title {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-left: 16px;
+.contact-link-info:hover {
+  color: #9c27b0;
 }
 
 .contact-button {
@@ -68,62 +36,35 @@
 
 @media screen and (max-width: 960px) {
   .contact-content {
-    margin: 64px 0px;
-  }
-
-  .contact-end {
-    padding: 32px;
-    padding-bottom: 64px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .contact-end {
-    padding: 32px;
-    padding-bottom: 64px;
-  }
-
-  .contact-link-subcontainer {
-    padding-left: 0px;
+    margin: 64px 32px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .contact-end-container {
-    padding: 32px 16px 16px;
-  }
-
-  .contact-container {
-    padding-top: 112px;
-  }
-
   .contact-end {
-    padding: 16px;
+    padding: 32px;
   }
 
-  .contact-link-info {
-    padding-left: 0px;
+  .contact-end-container {
+    display: flex;
+    flex-flow: column nowrap;
   }
 
   .contact-content {
-    margin: 32px 0;
+    margin: 0 24px 40px;
+  }
+
+  .contact-content h6 {
+    text-align: center;
   }
 
   .contact-content-text {
     text-align: left;
   }
-}
 
-@media screen and (max-width: 400px) {
-  .contact-title {
-    text-align: center;
-    padding-top: 0px;
+  .contact-end-subcontainer-small {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
   }
-}
-
-.contact-content-extra-small {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  padding-top: 16px;
 }
