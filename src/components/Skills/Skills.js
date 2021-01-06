@@ -28,8 +28,8 @@ const Skills = () => {
           </Grid>
           <Grid item md={6} sm={6} xs={12}>
             <Skill title='TypeScript' progress={ 80 } />
-            <Skill title='HTML / CSS' progress={ 90 } />
             <Skill title='NextJS' progress={ 80 } /> 
+            <Skill title='HTML / CSS' progress={ 90 } />
             <Skill title='SQL' progress={ 85 } /> 
           </Grid>
         </Grid> 

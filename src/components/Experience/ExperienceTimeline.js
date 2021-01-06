@@ -64,13 +64,13 @@ const ExperienceTimeline = () => {
         </TimelineSeparator>
         <TimelineContent className="timeline-content-left">
           <Typography variant="h6">
-            Apr 2018 - June 2020
+            Apr 2020 - June 2020
           </Typography>
           <Typography variant="h6">
             React - The Complete Guide (Hooks, React Router, Redux)
           </Typography>
           <Typography className="location-name" color="secondary">
-            Udemy Course taught by Maximilian Schwarzmüller
+            Udemy Course
           </Typography>           
           <Typography>
              • Dive deeper in React with advanced React knowledge as well as popular libraries like react-router and Redux <br />             
