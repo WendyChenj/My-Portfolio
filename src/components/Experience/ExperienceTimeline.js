@@ -40,30 +40,6 @@ const ExperienceTimeline = () => {
         </TimelineSeparator>
         <TimelineContent className="timeline-content-right">
           <Typography variant="h6">
-            Jan 2018 - June 2020
-          </Typography>
-          <Typography variant="h6">
-            Master of Science of Systems Science
-          </Typography>
-          <Typography className="location-name" color="secondary">
-            University of Ottawa, Ottawa, ON
-          </Typography>           
-          <Typography>GPA: 9.6 / 10</Typography>
-          <Typography>
-            Related Courses: Modelling and Simulation (A+); Systems Engineering (A+); System Optimization and Management (A+); 
-            Applied Probability (A+); Advanced Database System (A); Data Structures and Algorithms
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem style={{minHeight: "100px"}} className="TimelineItem">
-        <TimelineSeparator>
-          <TimelineDot color="primary" variant="outlined">
-            <SchoolIcon fontSize="large" />
-          </TimelineDot>
-          <TimelineConnector/>
-        </TimelineSeparator>
-        <TimelineContent className="timeline-content-left">
-          <Typography variant="h6">
             Apr 2020 - June 2020
           </Typography>
           <Typography variant="h6">
@@ -76,6 +52,30 @@ const ExperienceTimeline = () => {
              • Dive deeper in React with advanced React knowledge as well as popular libraries like react-router and Redux <br />             
              • Build powerful, fast, user-friendly and reactive web apps with Class-based Components and React Hooks from ground up <br /> 
              • Apply form validation, authentication and unit testing on React application and deploy applications on Internet
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem style={{minHeight: "100px"}} className="TimelineItem">
+        <TimelineSeparator>
+          <TimelineDot color="primary" variant="outlined">
+            <SchoolIcon fontSize="large" />
+          </TimelineDot>
+          <TimelineConnector/>
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content-left">
+          <Typography variant="h6">
+            Jan 2018 - June 2020
+          </Typography>
+          <Typography variant="h6">
+            Master of Science of Systems Science
+          </Typography>
+          <Typography className="location-name" color="secondary">
+            University of Ottawa, Ottawa, ON
+          </Typography>           
+          <Typography>GPA: 9.6 / 10</Typography>
+          <Typography>
+            Related Courses: Modelling and Simulation (A+); Systems Engineering (A+); System Optimization and Management (A+); 
+            Applied Probability (A+); Advanced Database System (A); Data Structures and Algorithms
           </Typography>
         </TimelineContent>
       </TimelineItem>
