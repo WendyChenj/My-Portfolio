@@ -67,10 +67,10 @@ const ExperienceTimeline = () => {
             Apr 2020 - June 2020
           </Typography>
           <Typography variant="h6">
-            React - The Complete Guide (Hooks, React Router, Redux)
+            React in Web Development Certification
           </Typography>
           <Typography className="location-name" color="secondary">
-            Udemy Course
+            Udemy E-learning
           </Typography>           
           <Typography>
              • Dive deeper in React with advanced React knowledge as well as popular libraries like react-router and Redux <br />             
