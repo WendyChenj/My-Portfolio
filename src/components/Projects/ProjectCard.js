@@ -31,7 +31,7 @@ const ProjectCard = props => {
           {props.projectName}
         </Typography>
 
-        {window.innerWidth > 600 ? <TechStack /> : null}
+        <TechStack />
 
         <Typography style={{marginTop: "6px"}}>
           {window.innerWidth > 960 ? props.intro : props.simpleIntro}

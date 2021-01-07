@@ -32,7 +32,7 @@ const Projects = () => {
             The customer information and order data are stored in the database. 
             Users are required to log in to place an order or check their history orders."
           simpleIntro="Customers are required to log in to create their own burger by adding or removing ingredients, place an order and check their history orders.
-            The customer information and order data are stored in the database. "
+            The customer information and order data are stored in the database."
           websiteLink="https://react-my-burger-1f18b.web.app/"
           githubLink="https://github.com/WendyChenj/My-Burger-Builder"
         />
@@ -85,7 +85,7 @@ const Projects = () => {
           image={window.innerWidth > 600 ? todoImg: smallTodoImg} 
           imgTitle="Task Management Application" 
           projectName="Task Management Application"
-          techStack={["TypeScript", "React", "Redux", "styled-components", "react-router"]}
+          techStack={["TypeScript", "React", "Redux", "Styled-Components", "react-router"]}
           intro="The todo app allows users to check their task lists based on the task state including todo, in progress and done. 
             Also, users can add new tasks and edit tasks according to their progress!"
           simpleIntro="There are three task status including todo, in progress and done. 
@@ -97,8 +97,8 @@ const Projects = () => {
         <ProjectCard 
           image={busImg} 
           imgTitle="Bus" 
-          projectName="A Predictive Maintenance System for A Hybrid Bus (Master's Thesis)"
-          techStack={['Python', 'Flask', 'Flask-SqlAlchemy', 'MySQL', 'JavaScript', 'HTML', 'CSS', 'Restful API', 'IoT', 'Expert System']}
+          projectName="A Predictive Maintenance System for A Hybrid Bus"
+          techStack={['Python', 'Flask', 'Flask-SqlAlchemy', 'MySQL', 'JavaScript', 'HTML', 'CSS', 'IoT']}
           intro="This system can monitor real-time sensor activities, store and process real-time data in database 
             and alert warnings when abnormal data occurs. By cooperating with mechanical techinians in STO company and other colleagues from my lab, 
             we successfully built a front-end interface to display bus conditions and notify warnings, and a back-end management system to analyze data and catch execeptions."
