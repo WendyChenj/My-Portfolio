@@ -64,7 +64,7 @@ const ExperienceTimeline = () => {
         </TimelineSeparator>
         <TimelineContent className="timeline-content-left">
           <Typography variant="h6">
-            Jan 2018 - June 2020
+            Jan 2018 - Oct 2020
           </Typography>
           <Typography variant="h6">
             Master of Science of Systems Science
