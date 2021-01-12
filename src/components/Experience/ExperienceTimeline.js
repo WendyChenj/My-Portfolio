@@ -40,30 +40,6 @@ const ExperienceTimeline = () => {
         </TimelineSeparator>
         <TimelineContent className="timeline-content-right">
           <Typography variant="h6">
-            Apr 2020 - June 2020
-          </Typography>
-          <Typography variant="h6">
-            React in Web Development Certification
-          </Typography>
-          <Typography className="location-name" color="secondary">
-            Udemy E-learning
-          </Typography>           
-          <Typography>
-             • Dive deeper in React with advanced React knowledge as well as popular libraries like react-router and Redux <br />             
-             • Build powerful, fast, user-friendly and reactive web apps with Class-based Components and React Hooks from ground up <br /> 
-             • Apply form validation, authentication and unit testing on React application and deploy applications on Internet
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem style={{minHeight: "100px"}} className="TimelineItem">
-        <TimelineSeparator>
-          <TimelineDot color="primary" variant="outlined">
-            <SchoolIcon fontSize="large" />
-          </TimelineDot>
-          <TimelineConnector/>
-        </TimelineSeparator>
-        <TimelineContent className="timeline-content-left">
-          <Typography variant="h6">
             Jan 2018 - Oct 2020
           </Typography>
           <Typography variant="h6">
@@ -76,6 +52,31 @@ const ExperienceTimeline = () => {
           <Typography>
             Related Courses: Modelling and Simulation (A+); Systems Engineering (A+); System Optimization and Management (A+); 
             Applied Probability (A+); Advanced Database System (A); Data Structures and Algorithms
+          </Typography>
+        </TimelineContent>   
+      </TimelineItem>
+      <TimelineItem style={{minHeight: "100px"}} className="TimelineItem">
+        <TimelineSeparator>
+          <TimelineDot color="primary" variant="outlined">
+            <SchoolIcon fontSize="large" />
+          </TimelineDot>
+          <TimelineConnector/>
+        </TimelineSeparator>
+        
+        <TimelineContent className="timeline-content-left">
+          <Typography variant="h6">
+            Apr 2020 - June 2020
+          </Typography>
+          <Typography variant="h6">
+            React in Web Development Certification
+          </Typography>
+          <Typography className="location-name" color="secondary">
+            Udemy E-learning
+          </Typography>           
+          <Typography>
+             • Dive deeper in React with advanced React knowledge as well as popular libraries like react-router and Redux <br />             
+             • Build powerful, fast, user-friendly and reactive web apps with Class-based Components and React Hooks from ground up <br /> 
+             • Apply form validation, authentication and unit testing on React application and deploy applications on Internet
           </Typography>
         </TimelineContent>
       </TimelineItem>
