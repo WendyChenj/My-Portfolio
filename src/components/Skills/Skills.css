@@ -1,38 +1,38 @@
 .skills-items-container {
-    margin: 0 64px;
+  margin: 0 128px;
 }
 
 .each-skill-container {
-    padding: 32px 32px 32px 16px;
+  padding: 16px 32px 32px 16px;
 }
 
 .each-skill-title {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
 }
 
 .skill-progress {
-    height: 16px;
-    border-radius: 10px;
+  height: 16px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 960px) {
-    .skills-container {
-        padding: 0 64px;
-    }
+  .skills-container {
+    padding: 0 64px;
+  }
 
-    .skills-items-container {
-        margin: 0px;
-    }
+  .skills-items-container {
+    margin: 0 8px;
+  }
 
-    .each-skill-container {
-        padding-left: 0;
-    }
+  .each-skill-container {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .each-skill-container {
-        padding: 16px 32px 16px 16px;
-    }
+  .each-skill-container {
+    padding: 8px 16px 16px;
+  }
 }

@@ -1,63 +1,83 @@
 .home-container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 .home-overlay {
-    position: absolute;
-    background-color: #9c27b0;
-    content: ' ';
-    opacity: .1;
-    width: 50%;
-    height: 100vh;
-    top: 0;
-    left: 0;
+  position: absolute;
+  background-color: #9c27b0;
+  content: " ";
+  opacity: 0.1;
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 .home-intro-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home-arrow-container {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    height: 150px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  height: 120px;
 }
 
 .arrow-down-icon {
-    animation: 2s ease-in 1s infinite arrowdown;
+  animation: 2s ease-in 1s infinite arrowdown;
 }
 
 @keyframes arrowdown {
-    100% {
-        margin-top: 25px;
-        opacity: 1;
-    }
+  100% {
+    margin-top: 25px;
+    opacity: 1;
+  }
 
-    30% {
-        opacity: 1;
-    }
+  30% {
+    opacity: 1;
+  }
 
-    0% {
-        margin-top: -10px;
-        opacity: 0;
-    }
+  0% {
+    margin-top: -10px;
+    opacity: 0;
+  }
 }
 
 @media screen and (max-height: 600px) {
-    .home-arrow-container {
-        height: 80px;
-    }
+  .home-arrow-container {
+    height: 60px;
+  }
 }
 
 @media screen and (max-height: 450px) {
-    .home-arrow-container {
-        height: 40px;
-    }
+  .home-arrow-container {
+    height: 40px;
+  }
+}
+
+.home-front-end {
+  width: 250px;
+  overflow: hidden;
+  border-right: 0.15em solid #9c27b0;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: blink-caret 0.8s step-end infinite;
+  padding-right: 8px;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #9c27b0;
+  }
 }

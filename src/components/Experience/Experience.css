@@ -1,39 +1,35 @@
-.edu-item {
-    padding: 32px 64px;
-    display: flex;
-    flex-flow: row nowrap;
+.experience-timeline {
+  margin: 0 64px;
+}
+
+.timeline-content-right {
+  text-align: right;
+}
+
+.timeline-content-left {
+  text-align: left;
+}
+
+.location-name {
+  padding-bottom: 8px;
 }
 
 @media screen and (max-width: 960px) {
-    .edu-item {
-        padding: 32px 16px;
-    }
-}
+  .experience-timeline {
+    text-align: left;
+  }
 
+  .TimelineItem.MuiTimelineItem-missingOppositeContent::before {
+    content: none;
+  }
 
-.edu-item-icon {
-    padding: 0 32px 0 16px;
-}
-
-@media screen and (max-width: 960px) {
-    .edu-item {
-        padding: 32px 0px;
-    }
-
-    .edu-item-icon {
-        padding-left: 0px;
-    }
+  .timeline-content-right {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .edu-item {
-        flex-flow: column nowrap;
-        text-align: left;
-    }
-
-    .edu-item-icon {
-        padding: 0 0 8px 0;
-    }
+  .experience-timeline {
+    margin: 0;
+  }
 }
-
-
