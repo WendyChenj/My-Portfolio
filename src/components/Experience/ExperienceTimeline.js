@@ -10,6 +10,28 @@ const ExperienceTimeline = () => {
     <Timeline align={window.innerWidth > 960 ? "alternate" : "left"}>
       <TimelineItem style={{minHeight: "100px", padding: "8px 0 8px 0"}} className="TimelineItem">
         <TimelineSeparator>
+          <TimelineDot color="primary">
+            <BusinessIcon fontSize="large" />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content-right">
+          <Typography variant="h6">
+            Dec 2020 - Present
+          </Typography>
+          <Typography variant="h6">
+            Front End Developer
+          </Typography>
+          <Typography className="location-name" color="secondary">
+            DigLit, Toronto, ON
+          </Typography>           
+          <Typography> 
+            • Working in an agile environment with 20+ team members to deliver an application for volunteer drivers and performing peer reviewing to ensure code quality <br />
+            • Developing components using Typescript and Next.js, and writing unit test to validate code performance </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem style={{minHeight: "100px", padding: "8px 0 8px 0"}} className="TimelineItem">
+        <TimelineSeparator>
           <TimelineDot color="primary" variant="outlined">
             <BusinessIcon fontSize="large" />
           </TimelineDot>
