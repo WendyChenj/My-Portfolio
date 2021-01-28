@@ -11,10 +11,10 @@ Screenshots below are provided in screen size 768 * 1024. Please feel free to vi
 ##### Home Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/HomePage.png" width="350">
 
-### Side Drawer 
+##### Side Drawer 
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/Drawer.png" width="350">
 
-### About Me Page
+##### About Me Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/AboutPage.png" width="350">
 
 ### Education Page
