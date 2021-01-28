@@ -17,16 +17,16 @@ Screenshots below are provided in screen size 768 * 1024. Please feel free to vi
 ##### About Me Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/AboutPage.png" width="350">
 
-### Education Page
+##### Education Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/EducationPage.png" width="350">
 
-### Projects Page
+##### Projects Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/ProjectsPage.png" width="350">
 
-### Skills Page
+##### Skills Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/SkillsPage.png" width="350">
 
-### Contact Me Page
+##### Contact Me Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/ContactMePage.png" width="350">
 
 @ Happy Coding - WENDY 
