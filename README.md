@@ -7,7 +7,8 @@ Please meet me at my website and contact me if you are interested in my skillset
 
 Screenshots below are provided in screen size 768 * 1024. Please feel free to view my portfolio at multiple divices. 
 
-### Home Page
+### DEMO
+##### Home Page
 <img src="https://github.com/WendyChenj/My-Portfolio/blob/media/HomePage.png" width="350">
 
 ### Side Drawer 
