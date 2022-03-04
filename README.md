@@ -1,6 +1,6 @@
 # WENDY CHEN's PORTFOLIO
 
-Wendy Chen is a Front End Developer with experience of front end web development using React from the ground up – design, development, debugging, troubleshooting, testing, delivery and maintenance. Proficient in an assortment of technologies and tools, including JavaScript (ES6), TypeScript, HTML5/CSS3, React, Redux, NextJS, Material-UI, SASS and Git.
+Wendy Chen is a Front End Developer with experience of front end web development using React and Angular from the ground up – design, development, debugging, troubleshooting, testing, delivery and maintenance. Proficient in an assortment of technologies and tools, including JavaScript (ES6), TypeScript, HTML5/CSS3, React, Angular, Redux, NextJS, Material-UI, SASS, Test Tools and Git.
 
 Please meet me at my website and contact me if you are interested in my skillsets and aptitude.
 [http://www.hiwendychen.com/]
