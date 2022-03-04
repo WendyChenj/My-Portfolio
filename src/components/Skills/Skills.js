@@ -22,13 +22,14 @@ const Skills = () => {
         <Grid container >
           <Grid item md={6} sm={6} xs={12}>
             <Skill title='JavaScript' progress={ 90 } />
-            <Skill title='React' progress={ 90 } />                           
-            <Skill title='Python' progress={ 80 } />
+            <Skill title='React' progress={ 90 } />  
+            <Skill title='NextJS' progress={80} />                          
+            <Skill title='Python' progress={ 70 } />
             <Skill title='Git' progress={ 80 } />                                 
           </Grid>
           <Grid item md={6} sm={6} xs={12}>
             <Skill title='TypeScript' progress={ 80 } />
-            <Skill title='NextJS' progress={ 80 } /> 
+            <Skill title='Angular' progress={90} /> 
             <Skill title='HTML / CSS' progress={ 90 } />
             <Skill title='SQL' progress={ 85 } /> 
           </Grid>

@@ -8,7 +8,7 @@ import "./Experience.css";
 const ExperienceTimeline = () => {
   return (
     <Timeline align={window.innerWidth > 960 ? "alternate" : "left"}>
-      <TimelineItem style={{minHeight: "100px", padding: "8px 0 8px 0"}} className="TimelineItem">
+      <TimelineItem style={{ minHeight: "100px", padding: "8px 0 8px 0" }} className="TimelineItem">
         <TimelineSeparator>
           <TimelineDot color="primary">
             <BusinessIcon fontSize="large" />
@@ -17,17 +17,65 @@ const ExperienceTimeline = () => {
         </TimelineSeparator>
         <TimelineContent className="timeline-content-right">
           <Typography variant="h6">
-            Dec 2020 - Present
+            March 2021 - Present
+          </Typography>
+          <Typography variant="h6">
+            Front End Developer
+          </Typography>
+          <Typography className="location-name" color="secondary">
+            Cerebri AI, Toronto, ON
+          </Typography>
+          <Typography>
+            • Implementing and maintaining an AI powered enterprise web application on Typescript/Angular/D3 stack <br />
+            • Designing and developing an in-house rebuild platform including UI and database to help users create data visualization dashboards <br />
+            • Promoting multilingual feature and multiple theme system support to rich customer experience
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem style={{ minHeight: "100px", padding: "8px 0 8px 0" }} className="TimelineItem">
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <BusinessIcon fontSize="large" />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content-right">
+          <Typography variant="h6">
+            Dec 2020 - Dec 2021
           </Typography>
           <Typography variant="h6">
             Front End Developer
           </Typography>
           <Typography className="location-name" color="secondary">
             DigLit, Toronto, ON
-          </Typography>           
-          <Typography> 
-            • Working in an agile environment with 20+ team members to deliver an application for volunteer drivers and performing peer reviewing to ensure code quality <br />
-            • Developing components using Typescript and Next.js, and writing unit test to validate code performance </Typography>
+          </Typography>
+          <Typography>
+            • Collaborated with 20+ team members in agile environment to deliver an application for volunteer drivers <br />
+            • Achieved high-quality code contribution by performing peer review and write unit test in Jest <br />
+            • Built the UI to manage drivers information and improve search engine optimization by adopting NextJS
+           </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem style={{ minHeight: "100px", padding: "8px 0 8px 0" }} className="TimelineItem">
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <BusinessIcon fontSize="large" />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent className="timeline-content-right">
+          <Typography variant="h6">
+            Jan 2021 - March 2021
+          </Typography>
+          <Typography variant="h6">
+            Front End Developer
+          </Typography>
+          <Typography className="location-name" color="secondary">
+            The Lookbook
+          </Typography>
+          <Typography>
+            • Built responsive single page application (SPA) using React and Redux and followed standard design protocols <br />
+            • Performed queries and mutations to enable members to upload looks and submit feedbacks in GraphQL </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem style={{minHeight: "100px", padding: "8px 0 8px 0"}} className="TimelineItem">
@@ -39,7 +87,7 @@ const ExperienceTimeline = () => {
         </TimelineSeparator>
         <TimelineContent className="timeline-content-left">
           <Typography variant="h6">
-            Nov 2020 - Present
+            Nov 2020 - Feb 2021
           </Typography>
           <Typography variant="h6">
             Software Developer

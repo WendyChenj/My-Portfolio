@@ -30,7 +30,7 @@ const About = () => {
       <div className='about-me-intro'>
         <Typography variant='h6' color='secondary'>
           Hi, I am a professional front end developer who is fueled by true passion for implementing visual elements 
-          and building UX/UI websites. After obtaining my Master's Degree, I gained experience by volunteering startup company and using ReactJS to create reusable components. Also, I consider myself a 'forever student', eager to both practice coding skills through projects 
+          and building UX/UI websites. After obtaining my Master's Degree, I gained experience by working at different fields as Front End Devloper and using ReactJS and AngularJS to create reusable components. Also, I consider myself a 'forever student', eager to both practice coding skills through projects 
           and stay in tune with the latest technologies :)
         </Typography>
       </div>
